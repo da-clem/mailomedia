@@ -8,4 +8,9 @@ export default createGlobalStyle`
     width: 100vw;
     min-height: 100vh;
   }
-`
+
+  #root {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+`;
