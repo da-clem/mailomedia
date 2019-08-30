@@ -1,0 +1,41 @@
+$brand-primary: #29ABE0;
+$brand-secondary: #242635;
+
+$brand-primary-light: #53D5F2;
+$brand-secondary-light: #4A4E65;
+
+$brand-gradient-primary: linear-gradient(to bottom, $brand-primary-light, $brand-primary);
+$brand-gradient-secondary: linear-gradient(to bottom, $brand-secondary-light, $brand-secondary);
+
+
+:root {
+  --brand-primary: $brand-primary;
+  --brand-secondary: $brand-secondary;
+
+  --brand-primary-light: $brand-primary-light;
+  --brand-secondary-light: $brand-secondary-light;
+
+  --brand-gradient-primary: $brand-gradient-primary;
+  --brand-gradient-secondary: $brand-gradient-secondary;
+}
+
+
+.bg-gradient-primary {
+  background: $brand-gradient-primary;
+}
+
+.bg-gradient-secondary {
+  background: $brand-gradient-secondary;
+}
+
+.bg-gradient-primary_on-hover:hover {
+  background: $brand-gradient-primary;
+}
+
+.bg-gradient-secondary_on-hover:hover {
+  background: $brand-gradient-secondary;
+}
+
+.text-white_on-hover:hover {
+  color: white;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,600&display=swap');
+
+$font-family-base: 'Montserrat', 'Helvetica', sans-serif;
+
+:root {
+  --font-family-base: $font-family-base;
+}
+
+
+body {
+  font-family: $font-family-base;
+}
+
+
+h1 {
+  letter-spacing: -2px;
+}
+
+button {
+  letter-spacing: 3px;
+  text-transform: uppercase !important;
+}
+
+hr {
+  width: 70px;
+  margin: 3rem auto;
+}

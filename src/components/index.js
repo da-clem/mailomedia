@@ -1,0 +1,12 @@
+export { default as BannerSection } from "./BannerSection";
+export { default as SimpleValuePropSection } from "./SimpleValuePropSection";
+export { default as SuccessStoriesSection } from "./SuccessStoriesSection";
+export { default as StrategySection } from "./StrategySection";
+export { default as CustomersSection } from "./CustomersSection";
+export { default as CustomerAcquisitionSection } from "./CustomerAcquisitionSection";
+export { default as MethodologySection } from "./MethodologySection";
+export { default as MediaSection } from "./MediaSection";
+export { default as ValuePropSection } from "./ValuePropSection";
+export { default as ProjectManagerSection } from "./ProjectManagerSection";
+export { default as MapSection } from "./MapSection";
+export { default as Imports } from "./Imports";
