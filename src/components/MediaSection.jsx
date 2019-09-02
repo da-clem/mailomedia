@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Fade, Slide } from "react-reveal";
 import { StrategyBlob } from "./blobs"
 import {
   OptIn,
@@ -45,57 +46,61 @@ export default function MediaSection() {
     <div className="">
       <div className="bg-light py-7">
         <div className="container">
-          <h2 className="text-primary">Notre réseau médias France & Europe</h2>
-          <hr className="border-primary ml-0 pb-8" />
-          <div className="d-flex justify-content-between text-center flex-wrap">
-            <MediaCard>
-              <img src={PartenairesMedia} alt="PartenairesMedia" />
-              <h2 className="text-primary">1200</h2>
-              <p>
-                Partenaires <br />
-                médias
-              </p>
-            </MediaCard>
-            <MediaCard>
-              <img src={OptIn} alt="OptIn" />
-              <h2 className="text-primary">
-                58<small>M</small>
-              </h2>
-              <p>
-                Opt-in <br />
-                Emailing
-              </p>
-            </MediaCard>
-            <MediaCard>
-              <img src={Programmatique} alt="Programmatique" />
-              <h2 className="text-primary">
-                117<small>M</small>
-              </h2>
-              <p>
-                V.U <br />
-                Programmatique
-              </p>
-            </MediaCard>
-            <MediaCard>
-              <img src={CoRegistration} alt="CoRegistration" />
-              <h2 className="text-primary">
-                41<small>M</small>
-              </h2>
-              <p>
-                V.U <br />
-                Co-registration
-              </p>
-            </MediaCard>
-            <MediaCard>
-              <img src={SEA} alt="SEA" />
-              <h2 className="text-primary">
-                58<small>M</small>
-              </h2>
-              <p>
-                V.U <br /> Native Ads
-              </p>
-            </MediaCard>
-          </div>
+          <Slide left>
+            <h2 className="text-primary">Notre réseau médias France & Europe</h2>
+            <hr className="border-primary ml-0 pb-8" />
+          </Slide>
+          <Slide right cascade>
+            <div className="d-flex justify-content-between text-center flex-wrap">
+              <MediaCard>
+                <img src={PartenairesMedia} alt="PartenairesMedia" />
+                <h2 className="text-primary">1200</h2>
+                <p>
+                  Partenaires <br />
+                  médias
+                </p>
+              </MediaCard>
+              <MediaCard>
+                <img src={OptIn} alt="OptIn" />
+                <h2 className="text-primary">
+                  58<small>M</small>
+                </h2>
+                <p>
+                  Opt-in <br />
+                  Emailing
+                </p>
+              </MediaCard>
+              <MediaCard>
+                <img src={Programmatique} alt="Programmatique" />
+                <h2 className="text-primary">
+                  117<small>M</small>
+                </h2>
+                <p>
+                  V.U <br />
+                  Programmatique
+                </p>
+              </MediaCard>
+              <MediaCard>
+                <img src={CoRegistration} alt="CoRegistration" />
+                <h2 className="text-primary">
+                  41<small>M</small>
+                </h2>
+                <p>
+                  V.U <br />
+                  Co-registration
+                </p>
+              </MediaCard>
+              <MediaCard>
+                <img src={SEA} alt="SEA" />
+                <h2 className="text-primary">
+                  58<small>M</small>
+                </h2>
+                <p>
+                  V.U <br /> Native Ads
+                </p>
+              </MediaCard>
+            </div>
+          </Slide>
         </div>
         <CustomersSection />
       </div>
@@ -105,16 +110,20 @@ export default function MediaSection() {
           <StrategyContent>
             <div className="container text-white">
               <div className="row">
-                <div className="col-12 col-md-6">
-                  <h2>
-                    Vous êtes ici pour propulser votre stratégie digitale ?
-                  </h2>
-                </div>
-                <div className="col-12 col-md-6 d-flex align-items-center justify-content-end">
-                  <button className="btn btn-light">
-                    DECOUVRIR NOS SOLUTIONS
-                  </button>
-                </div>
+                <Fade left>
+                  <div className="col-12 col-md-6">
+                    <h2>
+                      Vous êtes ici pour propulser votre stratégie digitale ?
+                    </h2>
+                  </div>
+                </Fade>
+                <Fade right>
+                  <div className="col-12 col-md-6 d-flex align-items-center justify-content-end">
+                    <button className="btn btn-light">
+                      DECOUVRIR NOS SOLUTIONS
+                    </button>
+                  </div>
+                </Fade>
               </div>
             </div>
           </StrategyContent>

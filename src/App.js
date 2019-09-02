@@ -24,17 +24,23 @@ function App() {
     <ThemeProvider theme={{}}>
       <div>
         <GlobalStyles />
-        <BannerSection />
+        <Fade>
+          <BannerSection />
+        </Fade>
         <SimpleValuePropSection />
         <StrategySection />
-        <SuccessStoriesSection />
+        <Fade>
+          <SuccessStoriesSection />
+        </Fade>
         <CustomersSection />
         <CustomerAcquisitionSection />
         <MethodologySection />
         <MediaSection />
         <ValuePropSection />
         <ProjectManagerSection />
-        <MapSection />
+        <Fade>
+          <MapSection />
+        </Fade>
         <Imports />
       </div>
     </ThemeProvider>

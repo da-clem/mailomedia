@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
+import { Slide, Fade } from "react-reveal";
 import { MethodologyBlob } from "./blobs";
 import { ChevronDown, ArrowControl } from "./icons";
 
@@ -39,7 +40,7 @@ const MethodologyBulletPoints = styled.ul`
   list-style: none;
   margin-top: 1rem;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.5s ease;
 `;
 
 const MethodologyBulletPoint = styled.li`
@@ -150,111 +151,117 @@ export default function MethodologySection() {
       <MethodologyBackground />
       <MethodologyContent>
         <div className="container text-center text-white">
-          <h2>Une approche méthodologique et efficace</h2>
-          <hr className="border-white" />
-          <p className="mb-5">
-            <strong>Chaque projet est unique </strong>
-            mais notre approche est toujours la même. Pourquoi ? Parce qu’elle
-            marche. Notre approche méthodique dans la gestion des campagnes
-            digitales confiées nous permet d’obtenir{" "}
-            <strong>
-              les meilleurs résultats de croissance dans les meilleurs délais.
-              Grâce à la qualité et la maîtrise de nos contenus vous gagnez en
-              visibilité et touchez une audience affinitaire pour votre marque.
-            </strong>
-          </p>
-          <ChevronDown />
+          <Slide left>
+            <h2>Une approche méthodologique et efficace</h2>
+            <hr className="border-white" />
+          </Slide>
+          <Slide right>
+            <p className="mb-5">
+              <strong>Chaque projet est unique </strong>
+              mais notre approche est toujours la même. Pourquoi ? Parce qu’elle
+              marche. Notre approche méthodique dans la gestion des campagnes
+              digitales confiées nous permet d’obtenir{" "}
+              <strong>
+                les meilleurs résultats de croissance dans les meilleurs délais.
+                Grâce à la qualité et la maîtrise de nos contenus vous gagnez en
+                visibilité et touchez une audience affinitaire pour votre marque.
+              </strong>
+            </p>
+            <ChevronDown />
+          </Slide>
         </div>
       </MethodologyContent>
-      <MethodologySlider className="container">
-        <Slider {...settings}>
-          <MethodologyCard>
-            <MethodologyCardContent>
-              <MethodologyCardNumber className="bg-secondary">
-                01.
-              </MethodologyCardNumber>
-              <MethodologyCardTitle className="text-primary">
-                Recommandation stratégique
-              </MethodologyCardTitle>
-              <MethodologyChevronDown />
-            </MethodologyCardContent>
-            <MethodologyBulletPoints>
-              <MethodologyBulletPoint>
-                Expression et analyse du besoin, des objectifs et des KPIs.
-              </MethodologyBulletPoint>
-              <MethodologyBulletPoint>
-                Proposition détaillée du plan d’action et des ressources
-                employées.
-              </MethodologyBulletPoint>
-            </MethodologyBulletPoints>
-          </MethodologyCard>
-          <MethodologyCard>
-            <MethodologyCardContent>
-              <MethodologyCardNumber className="bg-secondary">
-                02.
-              </MethodologyCardNumber>
-              <MethodologyCardTitle className="text-primary">
-                Déploiement & monitoring des opérations
-              </MethodologyCardTitle>
-              <MethodologyChevronDown />
-            </MethodologyCardContent>
-            <MethodologyBulletPoints>
-              <MethodologyBulletPoint>
-                Production des supports créatifs et mise en place technique
-              </MethodologyBulletPoint>
-              <MethodologyBulletPoint>
-                Déploiement des campagnes par canal d’activation
-              </MethodologyBulletPoint>
-              <MethodologyBulletPoint>
-                Monitoring des campagnes par un chef de projets dédié
-              </MethodologyBulletPoint>
-            </MethodologyBulletPoints>
-          </MethodologyCard>
-          <MethodologyCard>
-            <MethodologyCardContent>
-              <MethodologyCardNumber className="bg-secondary">
-                03.
-              </MethodologyCardNumber>
-              <MethodologyCardTitle className="text-primary">
-                Analyse des performances
-              </MethodologyCardTitle>
-              <MethodologyChevronDown />
-            </MethodologyCardContent>
-            <MethodologyBulletPoints>
-              <MethodologyBulletPoint>
-                Analyse statistiques par le chef de projets à l’aide de nos DMP
-                in-house
-              </MethodologyBulletPoint>
-              <MethodologyBulletPoint>
-                Reportings hebdomadaires détaillés par opération et par canal
-              </MethodologyBulletPoint>
-              <MethodologyBulletPoint>
-                Recommandations d'actions et d'optimisations
-              </MethodologyBulletPoint>
-            </MethodologyBulletPoints>
-          </MethodologyCard>
-          <MethodologyCard>
-            <MethodologyCardContent>
-              <MethodologyCardNumber className="bg-secondary">
-                04.
-              </MethodologyCardNumber>
-              <MethodologyCardTitle className="text-primary">
-                Optimisation en continue
-              </MethodologyCardTitle>
-              <MethodologyChevronDown />
-            </MethodologyCardContent>
-            <MethodologyBulletPoints>
-              <MethodologyBulletPoint>
-                Activation des optimisations sur les différentes campagnes
-              </MethodologyBulletPoint>
-              <MethodologyBulletPoint>
-                Analyse de la pertinence des optimisations et confrontion aux
-                objectis fixés
-              </MethodologyBulletPoint>
-            </MethodologyBulletPoints>
-          </MethodologyCard>
-        </Slider>
-      </MethodologySlider>
+      <Fade>
+        <MethodologySlider className="container">
+          <Slider {...settings}>
+            <MethodologyCard>
+              <MethodologyCardContent>
+                <MethodologyCardNumber className="bg-secondary">
+                  01.
+                </MethodologyCardNumber>
+                <MethodologyCardTitle className="text-primary">
+                  Recommandation stratégique
+                </MethodologyCardTitle>
+                <MethodologyChevronDown />
+              </MethodologyCardContent>
+              <MethodologyBulletPoints>
+                <MethodologyBulletPoint>
+                  Expression et analyse du besoin, des objectifs et des KPIs.
+                </MethodologyBulletPoint>
+                <MethodologyBulletPoint>
+                  Proposition détaillée du plan d’action et des ressources
+                  employées.
+                </MethodologyBulletPoint>
+              </MethodologyBulletPoints>
+            </MethodologyCard>
+            <MethodologyCard>
+              <MethodologyCardContent>
+                <MethodologyCardNumber className="bg-secondary">
+                  02.
+                </MethodologyCardNumber>
+                <MethodologyCardTitle className="text-primary">
+                  Déploiement & monitoring des opérations
+                </MethodologyCardTitle>
+                <MethodologyChevronDown />
+              </MethodologyCardContent>
+              <MethodologyBulletPoints>
+                <MethodologyBulletPoint>
+                  Production des supports créatifs et mise en place technique
+                </MethodologyBulletPoint>
+                <MethodologyBulletPoint>
+                  Déploiement des campagnes par canal d’activation
+                </MethodologyBulletPoint>
+                <MethodologyBulletPoint>
+                  Monitoring des campagnes par un chef de projets dédié
+                </MethodologyBulletPoint>
+              </MethodologyBulletPoints>
+            </MethodologyCard>
+            <MethodologyCard>
+              <MethodologyCardContent>
+                <MethodologyCardNumber className="bg-secondary">
+                  03.
+                </MethodologyCardNumber>
+                <MethodologyCardTitle className="text-primary">
+                  Analyse des performances
+                </MethodologyCardTitle>
+                <MethodologyChevronDown />
+              </MethodologyCardContent>
+              <MethodologyBulletPoints>
+                <MethodologyBulletPoint>
+                  Analyse statistiques par le chef de projets à l’aide de nos DMP
+                  in-house
+                </MethodologyBulletPoint>
+                <MethodologyBulletPoint>
+                  Reportings hebdomadaires détaillés par opération et par canal
+                </MethodologyBulletPoint>
+                <MethodologyBulletPoint>
+                  Recommandations d'actions et d'optimisations
+                </MethodologyBulletPoint>
+              </MethodologyBulletPoints>
+            </MethodologyCard>
+            <MethodologyCard>
+              <MethodologyCardContent>
+                <MethodologyCardNumber className="bg-secondary">
+                  04.
+                </MethodologyCardNumber>
+                <MethodologyCardTitle className="text-primary">
+                  Optimisation en continue
+                </MethodologyCardTitle>
+                <MethodologyChevronDown />
+              </MethodologyCardContent>
+              <MethodologyBulletPoints>
+                <MethodologyBulletPoint>
+                  Activation des optimisations sur les différentes campagnes
+                </MethodologyBulletPoint>
+                <MethodologyBulletPoint>
+                  Analyse de la pertinence des optimisations et confrontion aux
+                  objectis fixés
+                </MethodologyBulletPoint>
+              </MethodologyBulletPoints>
+            </MethodologyCard>
+          </Slider>
+        </MethodologySlider>
+      </Fade>
     </MethodologyWrapper>
   );
 }

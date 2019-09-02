@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Fade } from "react-reveal";
 import { Emailing, CoRegistration, Programmatique, Monetisation, SEA, Social } from "./icons";
 
 const SimpleValuePropWrapper = styled.div`
@@ -30,44 +31,46 @@ const SimpleValuePropCardIcon = styled.img`
 export default function SimpleValuePropSection() {
   return (
     <SimpleValuePropWrapper className="container text-center">
-      <div className="row">
-        <div className="col-12 col-md-6 col-lg-4">
-          <SimpleValuePropCard className="text-primary">
-            <SimpleValuePropCardIcon src={Emailing} alt="Emailing" />
-            Emailing
-          </SimpleValuePropCard>
+      <Fade left cascade>
+        <div className="row">
+          <div className="col-12 col-md-6 col-lg-4">
+            <SimpleValuePropCard className="text-primary">
+              <SimpleValuePropCardIcon src={Emailing} alt="Emailing" />
+              Emailing
+            </SimpleValuePropCard>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <SimpleValuePropCard className="text-primary">
+              <SimpleValuePropCardIcon src={CoRegistration} alt="Display" />
+              Display
+            </SimpleValuePropCard>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <SimpleValuePropCard className="text-primary">
+              <SimpleValuePropCardIcon src={Programmatique} alt="Display" />
+              Programmatique
+            </SimpleValuePropCard>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <SimpleValuePropCard className="text-primary">
+              <SimpleValuePropCardIcon src={Social} alt="Social" />
+              Social
+            </SimpleValuePropCard>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <SimpleValuePropCard className="text-primary">
+              <SimpleValuePropCardIcon src={SEA} alt="SEA" />
+              SEA
+            </SimpleValuePropCard>
+          </div>
+          <div className="col-12 col-md-6 col-lg-4">
+            <SimpleValuePropCard className="text-primary">
+              <SimpleValuePropCardIcon src={Monetisation} alt="Monetisation" />
+              Monétisation
+            </SimpleValuePropCard>
+          </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-4">
-          <SimpleValuePropCard className="text-primary">
-            <SimpleValuePropCardIcon src={CoRegistration} alt="Display" />
-            Display
-          </SimpleValuePropCard>
-        </div>
-        <div className="col-12 col-md-6 col-lg-4">
-          <SimpleValuePropCard className="text-primary">
-            <SimpleValuePropCardIcon src={Programmatique} alt="Display" />
-            Programmatique
-          </SimpleValuePropCard>
-        </div>
-        <div className="col-12 col-md-6 col-lg-4">
-          <SimpleValuePropCard className="text-primary">
-            <SimpleValuePropCardIcon src={Social} alt="Social" />
-            Social
-          </SimpleValuePropCard>
-        </div>
-        <div className="col-12 col-md-6 col-lg-4">
-          <SimpleValuePropCard className="text-primary">
-            <SimpleValuePropCardIcon src={SEA} alt="SEA" />
-            SEA
-          </SimpleValuePropCard>
-        </div>
-        <div className="col-12 col-md-6 col-lg-4">
-          <SimpleValuePropCard className="text-primary">
-            <SimpleValuePropCardIcon src={Monetisation} alt="Monetisation" />
-            Monétisation
-          </SimpleValuePropCard>
-        </div>
-      </div>
+      </Fade>
     </SimpleValuePropWrapper>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
+import { Slide } from "react-reveal"
 import { ArrowControl, PierreRicaud, VoyagePrivee, Evaneos } from "./icons";
 import { SuccessStoriesBlob } from "./blobs";
 
@@ -71,74 +72,78 @@ export default function SuccessStoriesSection() {
       <SuccessStoriesContent className="text-white">
         <SuccessStoriesContainer className="container">
           <div>
-            <h2 className="text-left d-block">Nos Success stories </h2>
-            <hr className="ml-0 border-white" />
-            <Slider {...settings} >
-              <SuccessStory className="px-1 px-md-2">
-                <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
-                  <div>
-                    <img className="d-inline" src={Evaneos} alt="Evaneos" />
-                    <h3 className="pt-2">Evaneos</h3>
-                    <p className="small font-weight-lighter">
-                      #ROI #EMAILING
-                      <br />
-                      #EUROPE
-                    </p>
-                    <hr className="my-2 border-white" />
-                    <p className="mb-3">
-                      Enrichir et alimenter le PRM/CRM de la jeune entité en forte
-                      croissance en profils intentionnistes dans l’achat d’un
-                      voyage
-                    </p>
+            <Slide left>
+              <h2 className="text-left d-block">Nos Success stories </h2>
+              <hr className="ml-0 border-white" />
+            </Slide>
+            <Slide right>
+              <Slider {...settings} >
+                <SuccessStory className="px-1 px-md-2">
+                  <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
+                    <div>
+                      <img className="d-inline" src={Evaneos} alt="Evaneos" />
+                      <h3 className="pt-2">Evaneos</h3>
+                      <p className="small font-weight-lighter">
+                        #ROI #EMAILING
+                        <br />
+                        #EUROPE
+                      </p>
+                      <hr className="my-2 border-white" />
+                      <p className="mb-3">
+                        Enrichir et alimenter le PRM/CRM de la jeune entité en forte
+                        croissance en profils intentionnistes dans l’achat d’un
+                        voyage
+                      </p>
+                    </div>
+                    <button className="btn btn-secondary w-100">
+                      en savoir plus
+                    </button>
                   </div>
-                  <button className="btn btn-secondary w-100">
-                    en savoir plus
-                  </button>
-                </div>
-              </SuccessStory>
-              <SuccessStory className="px-1 px-md-2">
-                <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
-                  <div>
-                    <img className="d-inline" src={VoyagePrivee} alt="VoyagePrivee" />
-                    <h3 className="pt-2">Voyages Privés</h3>
-                    <p className="small font-weight-lighter">
-                      #COS #ACQUISITION
-                      <br />
-                      #PERF
-                    </p>
-                    <hr className="my-2 border-white" />
-                    <p className="mb-3">
-                      Accompagner la marque dans ses périodes commerciales fortes
-                      pour atteindre ses objectifs d’acquisition de nouveaux
-                      clients dans un contexte de performance
-                    </p>
+                </SuccessStory>
+                <SuccessStory className="px-1 px-md-2">
+                  <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
+                    <div>
+                      <img className="d-inline" src={VoyagePrivee} alt="VoyagePrivee" />
+                      <h3 className="pt-2">Voyages Privés</h3>
+                      <p className="small font-weight-lighter">
+                        #COS #ACQUISITION
+                        <br />
+                        #PERF
+                      </p>
+                      <hr className="my-2 border-white" />
+                      <p className="mb-3">
+                        Accompagner la marque dans ses périodes commerciales fortes
+                        pour atteindre ses objectifs d’acquisition de nouveaux
+                        clients dans un contexte de performance
+                      </p>
+                    </div>
+                    <button className="btn btn-secondary w-100">
+                      en savoir plus
+                    </button>
                   </div>
-                  <button className="btn btn-secondary w-100">
-                    en savoir plus
-                  </button>
-                </div>
-              </SuccessStory>
-              <SuccessStory className="px-1 px-md-2">
-                <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
-                  <div>
-                    <img className="d-inline" src={PierreRicaud} alt="PierreRicaud" />
-                    <h3 className="pt-2">Dr Pierre Ricaud</h3>
-                    <p className="small font-weight-lighter">
-                      #EUROPE #MULTICANAL #NEWCUSTOMERS
-                    </p>
-                    <hr className="my-2 border-white" />
-                    <p className="mb-3">
-                      Contribuer à rendre l’image de marque plus forte en Europe,
-                      alimenter le PRM/CRM en nouvelles clientes et générer des
-                      ventes sur les périodes fortes.
-                    </p>
+                </SuccessStory>
+                <SuccessStory className="px-1 px-md-2">
+                  <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
+                    <div>
+                      <img className="d-inline" src={PierreRicaud} alt="PierreRicaud" />
+                      <h3 className="pt-2">Dr Pierre Ricaud</h3>
+                      <p className="small font-weight-lighter">
+                        #EUROPE #MULTICANAL #NEWCUSTOMERS
+                      </p>
+                      <hr className="my-2 border-white" />
+                      <p className="mb-3">
+                        Contribuer à rendre l’image de marque plus forte en Europe,
+                        alimenter le PRM/CRM en nouvelles clientes et générer des
+                        ventes sur les périodes fortes.
+                      </p>
+                    </div>
+                    <button className="btn btn-secondary w-100">
+                      en savoir plus
+                    </button>
                   </div>
-                  <button className="btn btn-secondary w-100">
-                    en savoir plus
-                  </button>
-                </div>
-              </SuccessStory>
-            </Slider>
+                </SuccessStory>
+              </Slider>
+            </Slide>
           </div>
         </SuccessStoriesContainer>
       </SuccessStoriesContent>

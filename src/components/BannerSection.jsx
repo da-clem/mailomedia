@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { Fade } from "react-reveal";
 import BannerBlob from "./blobs/BannerBlob";
-import { Arrow } from "./icons"
+import { Arrow } from "./icons";
 
 const BannerWrapper = styled.div`
   position: relative;
@@ -20,7 +21,7 @@ const BannerBackground = styled(BannerBlob)`
   path {
     width: 100%;
   }
-`
+`;
 
 const BannerContent = styled.div`
   position: absolute;
@@ -61,7 +62,7 @@ const BannerNav = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -69,11 +70,11 @@ const BannerNav = styled.nav`
 const BannerNavLink = styled.a`
   padding-left: 1rem;
   font-size: 16px;
-  font-weight: ${({ active }) => active ? 'bold' : 'inherit'};
+  font-weight: ${({ active }) => (active ? "bold" : "inherit")};
   text-transform: capitalize;
   cursor: pointer;
 
-  &:hover {
+  &:hover  {
     text-decoration: underline !important;
   }
 
