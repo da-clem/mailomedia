@@ -44,7 +44,7 @@ export default function MapSection() {
   });
 
   return (
-    <div className="bg-gradient-primary">
+    <div className="bg-gradient-primary" id="contact">
       <section className="container pt-8 pb-10">
         <div className="row bg-white shadow">
           <div className="col-12 col-md-6 px-0">

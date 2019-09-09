@@ -18,7 +18,7 @@ const Button = styled.button`
 
 export default function StrategySection() {
   return (
-    <StrategyWrapper className="container text-center">
+    <StrategyWrapper className="container text-center pt-4" id="agency">
       <Slide left>
         <h2 className="text-primary">
           Besoin de propulser votre stratégie d'acquisition ?

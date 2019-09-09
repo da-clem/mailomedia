@@ -1,50 +1,28 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
+import { withRouter, Switch, Route } from "react-router-dom"
 import { ThemeProvider } from "styled-components";
-import Fade from "react-reveal/Fade";
 import { GlobalStyles } from "./styles";
 import {
-  BannerSection,
-  SimpleValuePropSection,
-  SuccessStoriesSection,
-  StrategySection,
-  CustomersSection,
-  CustomerAcquisitionSection,
-  MethodologySection,
-  MediaSection,
-  ValuePropSection,
   Imports,
-  MapSection,
-  ProjectManagerSection
 } from "./components";
+import Loader from "./Loader";
+
 
 import "./assets/stylesheets/application.scss";
 
-function App() {
+function App({ location }) {
   return (
     <ThemeProvider theme={{}}>
-      <div>
+      <Suspense fallback={<Loader />}>
         <GlobalStyles />
-        <Fade>
-          <BannerSection />
-        </Fade>
-        <SimpleValuePropSection />
-        <StrategySection />
-        <Fade>
-          <SuccessStoriesSection />
-        </Fade>
-        <CustomersSection />
-        <CustomerAcquisitionSection />
-        <MethodologySection />
-        <MediaSection />
-        <ValuePropSection />
-        <ProjectManagerSection />
-        <Fade>
-          <MapSection />
-        </Fade>
+        <Switch location={location}>
+          <Route exact path="/portfolio" component={lazy(() => import('./PortfolioPage'))} />
+          <Route exact path="/" component={lazy(() => import('./HomePage'))} />
+        </Switch>
         <Imports />
-      </div>
+      </Suspense>
     </ThemeProvider>
   );
 }
 
-export default App;
+export default withRouter(App);

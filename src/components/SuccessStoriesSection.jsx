@@ -67,7 +67,7 @@ export default function SuccessStoriesSection() {
   };
 
   return (
-    <SuccessStoriesWrapper>
+    <SuccessStoriesWrapper id="succes">
       <SuccessStoriesBackground />
       <SuccessStoriesContent className="text-white">
         <SuccessStoriesContainer className="container">

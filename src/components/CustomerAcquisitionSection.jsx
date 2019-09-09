@@ -4,7 +4,7 @@ import { Performance, Expertise, Social, Transparence } from "./icons";
 
 export default function CustomerAcquisitionSection() {
   return (
-    <div className="container text-center">
+    <div className="container text-center pt-7" id="solutions">
       <Slide left>
         <h2 className="text-primary">A la conquête de nouveaux clients</h2>
         <hr className="border-primary" />

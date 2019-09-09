@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 import BannerBlob from "./blobs/BannerBlob";
 import { Arrow } from "./icons";
+
 
 const BannerWrapper = styled.div`
   position: relative;
@@ -67,21 +68,24 @@ const BannerNav = styled.nav`
   }
 `;
 
-const BannerNavLink = styled.a`
+const BannerNavLink = styled(Link)`
   padding-left: 1rem;
   font-size: 16px;
   font-weight: ${({ active }) => (active ? "bold" : "inherit")};
   text-transform: capitalize;
+  color: white;
   cursor: pointer;
 
   &:hover  {
     text-decoration: underline !important;
+    color: white;
   }
 
   &:not(:last-of-type) {
     padding-right: 1rem;
   }
 `;
+
 
 const BannerText = styled.div`
   flex: 1 1 auto;
@@ -126,6 +130,12 @@ const ArrowButton = styled.button`
 `;
 
 export default function BannerSection() {
+
+  function scrollToSection(id) {
+    const target = document.getElementById(id)
+    target.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <BannerWrapper>
       <BannerBackground />
@@ -137,11 +147,24 @@ export default function BannerSection() {
               media
             </BannerLogo>
             <BannerNav>
-              <BannerNavLink active>Accueil</BannerNavLink>
-              <BannerNavLink>L’agence</BannerNavLink>
-              <BannerNavLink>Solutions</BannerNavLink>
-              <BannerNavLink>Succes Stories</BannerNavLink>
-              <BannerNavLink>Nous parler</BannerNavLink>
+              <BannerNavLink active onClick={() => scrollToSection("home")}>
+                Accueil
+              </BannerNavLink>
+              <BannerNavLink onClick={() => scrollToSection("agency")}>
+                L’agence
+              </BannerNavLink>
+              <BannerNavLink onClick={() => scrollToSection("succes")}>
+                Succes Stories
+              </BannerNavLink>
+              <BannerNavLink onClick={() => scrollToSection("solutions")}>
+                Solutions
+              </BannerNavLink>
+              <BannerNavLink onClick={() => scrollToSection("contact")}>
+                Nous parler
+              </BannerNavLink>
+              <BannerNavLink to="/portfolio">
+                portfolio
+              </BannerNavLink>
             </BannerNav>
           </BannerHeader>
           <BannerText>
