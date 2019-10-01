@@ -9,6 +9,7 @@ const MethodologyWrapper = styled.div`
   position: relative;
   margin-top: 200px;
   overflow: hidden;
+  padding-bottom: 2rem;
 `;
 
 const MethodologyContent = styled.div`
@@ -167,7 +168,7 @@ export default function MethodologySection() {
                 visibilité et touchez une audience affinitaire pour votre marque.
               </strong>
             </p>
-            <ChevronDown />
+            <ChevronDown className="d-none d-lg-block" />
           </Slide>
         </div>
       </MethodologyContent>

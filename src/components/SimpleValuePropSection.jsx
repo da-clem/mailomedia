@@ -36,37 +36,37 @@ export default function SimpleValuePropSection() {
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={Emailing} alt="Emailing" />
-              Emailing
+              <h3>Emailing</h3>
             </SimpleValuePropCard>
           </div>
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={CoRegistration} alt="Display" />
-              Display
+              <h3>Display</h3>
             </SimpleValuePropCard>
           </div>
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={Programmatique} alt="Display" />
-              Programmatique
+              <h3>Programmatique</h3>
             </SimpleValuePropCard>
           </div>
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={Social} alt="Social" />
-              Social
+              <h3>Social</h3>
             </SimpleValuePropCard>
           </div>
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={SEA} alt="SEA" />
-              SEA
+              <h3>SEA</h3>
             </SimpleValuePropCard>
           </div>
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={Monetisation} alt="Monetisation" />
-              Monétisation
+              <h3>Monétisation</h3>
             </SimpleValuePropCard>
           </div>
         </div>

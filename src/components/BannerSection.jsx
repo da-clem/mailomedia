@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import BannerBlob from "./blobs/BannerBlob";
@@ -46,8 +46,9 @@ const BannerHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 66px;
+  margin-top: 30px;
   flex: 0 0 auto;
+  position: relative;
 `;
 
 const BannerLogo = styled.div`
@@ -62,10 +63,6 @@ const BannerLogo = styled.div`
 const BannerNav = styled.nav`
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const BannerNavLink = styled(Link)`
@@ -86,6 +83,56 @@ const BannerNavLink = styled(Link)`
   }
 `;
 
+
+const BannerNavToggle = styled.div`
+  position: relative;
+  height: 1rem;
+  width: 3rem;
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    border-radius: 7px;
+  }
+
+  &::after {
+    bottom: 10%;
+    height: 3px;
+  }
+
+  &::before {
+    top: 10%;
+    height: 3px;
+  }
+`;
+
+const BannerNavMenu = styled.div`
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    display: ${({ open }) => open ? 'block' : 'none'};
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.08);
+
+    ${BannerNavLink} {
+      color: black;
+      width: 100%;
+      display: block;
+      padding: 1rem;
+    }
+  }
+`;
 
 const BannerText = styled.div`
   flex: 1 1 auto;
@@ -130,8 +177,10 @@ const ArrowButton = styled.button`
 `;
 
 export default function BannerSection() {
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  function scrollToSection(id) {
+  function scrollToSection(id, e) {
+    e.preventDefault()
     const target = document.getElementById(id)
     target.scrollIntoView({ behavior: 'smooth' })
   }
@@ -146,25 +195,29 @@ export default function BannerSection() {
               <span>mailo</span>
               media
             </BannerLogo>
+
             <BannerNav>
-              <BannerNavLink active onClick={() => scrollToSection("home")}>
-                Accueil
-              </BannerNavLink>
-              <BannerNavLink onClick={() => scrollToSection("agency")}>
-                L’agence
-              </BannerNavLink>
-              <BannerNavLink onClick={() => scrollToSection("succes")}>
-                Succes Stories
-              </BannerNavLink>
-              <BannerNavLink onClick={() => scrollToSection("solutions")}>
-                Solutions
-              </BannerNavLink>
-              <BannerNavLink onClick={() => scrollToSection("contact")}>
-                Nous parler
-              </BannerNavLink>
-              <BannerNavLink to="/portfolio">
-                portfolio
-              </BannerNavLink>
+              <BannerNavToggle onClick={() => setMenuOpen(!menuOpen)} />
+              <BannerNavMenu open={menuOpen}>
+                <BannerNavLink active onClick={(e) => scrollToSection("home", e)}>
+                  Accueil
+                </BannerNavLink>
+                <BannerNavLink onClick={(e) => scrollToSection("agency", e)}>
+                  L’agence
+                </BannerNavLink>
+                <BannerNavLink onClick={(e) => scrollToSection("succes", e)}>
+                  Succes Stories
+                </BannerNavLink>
+                <BannerNavLink onClick={(e) => scrollToSection("solutions", e)}>
+                  Solutions
+                </BannerNavLink>
+                <BannerNavLink onClick={(e) => scrollToSection("contact", e)}>
+                  Nous parler
+                </BannerNavLink>
+                <BannerNavLink to="/portfolio">
+                  portfolio
+                </BannerNavLink>
+              </BannerNavMenu>
             </BannerNav>
           </BannerHeader>
           <BannerText>

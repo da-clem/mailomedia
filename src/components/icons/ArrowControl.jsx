@@ -23,7 +23,7 @@ export default function ArrowControl(props) {
 
   const style = {
     transform: `rotate(${props.next ? "-" : ""}90deg)`,
-    [`${props.next ? "right" : "left"}`]: "8rem",
+    [`${props.next ? "right" : "left"}`]: "4rem",
     display: `${shouldShow() ? "block" : "none"}`
   };
 
