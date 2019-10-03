@@ -68,18 +68,18 @@ export default function MapSection() {
             <dl className="mb-3">
               <div className="row">
                 <div className="col-12 mb-1 d-flex">
-                  <dt className="text-uppercase mr-1 text-primary small">a</dt>
-                  <dd className="small font-weight-light">
+                  <dt className="text-uppercase mr-1 text-primary">a</dt>
+                  <dd className="font-weight-light">
                     11, avenue du Maréchal Joffre - 06000 NICE
                   </dd>
                 </div>
                 <div className="col-12 mb-1 d-flex">
-                  <dt className="text-uppercase mr-1 text-primary small">t</dt>
-                  <dd className="small font-weight-light">04 01 02 03 04</dd>
+                  <dt className="text-uppercase mr-1 text-primary">t</dt>
+                  <dd className="font-weight-light">04 01 02 03 04</dd>
                 </div>
                 <div className="col-12 mb-1 d-flex">
-                  <dt className="text-uppercase mr-1 text-primary small">e</dt>
-                  <dd className="small font-weight-light">
+                  <dt className="text-uppercase mr-1 text-primary">e</dt>
+                  <dd className="font-weight-light">
                     contact@agence-mailomedia.com
                   </dd>
                 </div>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Slide } from "react-reveal"
-import { ArrowControl, PierreRicaud, VoyagePrivee, Evaneos } from "./icons";
+import { PierreRicaud, VoyagePrivee, Evaneos } from "./icons";
 import { SuccessStoriesBlob } from "./blobs";
 
 const SuccessStoriesWrapper = styled.div`
@@ -13,6 +13,7 @@ const SuccessStoriesWrapper = styled.div`
 
 const SuccessStoriesBackground = styled(SuccessStoriesBlob)`
   min-width: 100%;
+  height: 120vh;
 `;
 
 const SuccessStoriesContent = styled.div`
@@ -30,28 +31,33 @@ const SuccessStoriesContainer = styled.div`
 
 
 const SuccessStory = styled.article`
-  height: 650px;
 
   hr {
     border-width: 2px;
     width: 20px;
   }
+
+  img {
+    height: 65px;
+  }
 `;
 
 export default function SuccessStoriesSection() {
   const settings = {
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: <ArrowControl next slidesToShow={1} />,
-          prevArrow: <ArrowControl previous slidesToShow={1} />
+          dots: true,
+          arrows: false,
         }
       },
       {
@@ -59,8 +65,8 @@ export default function SuccessStoriesSection() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: <ArrowControl next slidesToShow={1} />,
-          prevArrow: <ArrowControl previous slidesToShow={1} />
+          dots: true,
+          arrows: false,
         }
       }
     ]
@@ -128,7 +134,7 @@ export default function SuccessStoriesSection() {
                       <img className="d-inline" src={PierreRicaud} alt="PierreRicaud" />
                       <h3 className="pt-2">Dr Pierre Ricaud</h3>
                       <p className="small font-weight-lighter">
-                        #EUROPE #MULTICANAL #NEWCUSTOMERS
+                        #EUROPE #MULTICANAL<br />#NEWCUSTOMERS
                       </p>
                       <hr className="my-2 border-white" />
                       <p className="mb-3">

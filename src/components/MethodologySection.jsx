@@ -17,7 +17,7 @@ const MethodologyContent = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 900px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,18 +157,20 @@ export default function MethodologySection() {
             <hr className="border-white" />
           </Slide>
           <Slide right>
-            <p className="mb-5">
+            <p className="mb-5 px-10">
               <strong>Chaque projet est unique </strong>
-              mais notre approche est toujours la même. Pourquoi ? Parce qu’elle
-              marche. Notre approche méthodique dans la gestion des campagnes
+              mais notre approche est toujours la même.<br /> Pourquoi ? Parce qu’elle marche.
+              <br /><br />
+               Notre approche méthodique dans la gestion des campagnes
               digitales confiées nous permet d’obtenir{" "}
               <strong>
                 les meilleurs résultats de croissance dans les meilleurs délais.
+                <br /><br />
                 Grâce à la qualité et la maîtrise de nos contenus vous gagnez en
                 visibilité et touchez une audience affinitaire pour votre marque.
               </strong>
             </p>
-            <ChevronDown className="d-none d-lg-block" />
+            <ChevronDown className="d-none d-lg-block m-auto" />
           </Slide>
         </div>
       </MethodologyContent>

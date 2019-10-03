@@ -4,14 +4,14 @@ import { Performance, Expertise, Social, Transparence } from "./icons";
 
 export default function CustomerAcquisitionSection() {
   return (
-    <div className="container text-center pt-7" id="solutions">
+    <div className="container text-center pt-4" id="solutions">
       <Slide left>
         <h2 className="text-primary">A la conquête de nouveaux clients</h2>
         <hr className="border-primary" />
       </Slide>
       <Slide right>
         <p className="font-weight-bold text-uppercase mb-2">L’ADN PARFAITE : </p>
-        <p className="mb-10">
+        <p className="mb-6">
           Nos valeurs sont nos piliers fondateurs depuis maintenant plus de 5 ans.
           Vous souhaitez un engagement ? Le voici :
         </p>

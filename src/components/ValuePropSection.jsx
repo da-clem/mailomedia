@@ -99,7 +99,7 @@ export default function ValuePropSection() {
   };
 
   return (
-    <div className="my-8 text-center">
+    <div className="my-4 text-center">
       <div className="container">
         <Fade left>
           <h2 className="text-primary">Ce que nous maîtrisons à la perfection</h2>

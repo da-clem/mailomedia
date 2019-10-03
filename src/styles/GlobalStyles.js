@@ -13,4 +13,8 @@ export default createGlobalStyle`
     overflow-x: hidden;
     width: 100vw;
   }
+
+  .slick-dots {
+    bottom: -75px !important;
+  }
 `;

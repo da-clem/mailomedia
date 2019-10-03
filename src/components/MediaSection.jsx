@@ -9,7 +9,7 @@ import {
   CoRegistration,
   SEA
 } from "./icons";
-import CustomersSection from "./CustomersSection"
+import MediaPartnersSection from "./MediaPartners"
 
 const MediaCard = styled.div`
   flex: 1 1 auto;
@@ -44,11 +44,11 @@ const StrategyContent = styled.div`
 export default function MediaSection() {
   return (
     <div className="">
-      <div className="bg-light py-7">
+      <div className="bg-light py-5">
         <div className="container">
           <Slide left>
             <h2 className="text-primary">Notre réseau médias France & Europe</h2>
-            <hr className="border-primary ml-0 pb-8" />
+            <hr className="border-primary ml-0 pb-2" />
           </Slide>
           <Slide right cascade>
             <div className="d-flex justify-content-between text-center flex-wrap">
@@ -101,8 +101,9 @@ export default function MediaSection() {
               </MediaCard>
             </div>
           </Slide>
+
         </div>
-        <CustomersSection />
+        <MediaPartnersSection />
       </div>
       <StrategyWrapper>
         <StrategyBackground />

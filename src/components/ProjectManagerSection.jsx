@@ -4,7 +4,7 @@ import { ProjectManager } from "./icons";
 
 export default function ProjectManagerSection() {
   return (
-    <div className="container py-10">
+    <div className="container py-4">
       <div className="row">
         <Fade left>
           <div className="col-12 col-lg-5">

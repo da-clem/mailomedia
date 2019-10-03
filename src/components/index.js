@@ -6,6 +6,7 @@ export { default as CustomersSection } from "./CustomersSection";
 export { default as CustomerAcquisitionSection } from "./CustomerAcquisitionSection";
 export { default as MethodologySection } from "./MethodologySection";
 export { default as MediaSection } from "./MediaSection";
+export { default as MediaPartnersSection } from "./MediaPartners";
 export { default as ValuePropSection } from "./ValuePropSection";
 export { default as ProjectManagerSection } from "./ProjectManagerSection";
 export { default as MapSection } from "./MapSection";

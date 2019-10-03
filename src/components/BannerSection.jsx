@@ -199,7 +199,7 @@ export default function BannerSection() {
             <BannerNav>
               <BannerNavToggle onClick={() => setMenuOpen(!menuOpen)} />
               <BannerNavMenu open={menuOpen}>
-                <BannerNavLink active onClick={(e) => scrollToSection("home", e)}>
+                <BannerNavLink onClick={(e) => scrollToSection("home", e)}>
                   Accueil
                 </BannerNavLink>
                 <BannerNavLink onClick={(e) => scrollToSection("agency", e)}>
@@ -211,17 +211,17 @@ export default function BannerSection() {
                 <BannerNavLink onClick={(e) => scrollToSection("solutions", e)}>
                   Solutions
                 </BannerNavLink>
-                <BannerNavLink onClick={(e) => scrollToSection("contact", e)}>
-                  Nous parler
-                </BannerNavLink>
                 <BannerNavLink to="/portfolio">
-                  portfolio
+                  Portfolio
+                </BannerNavLink>
+                <BannerNavLink onClick={(e) => scrollToSection("contact", e)}>
+                  <strong>Nous parler</strong>
                 </BannerNavLink>
               </BannerNavMenu>
             </BannerNav>
           </BannerHeader>
           <BannerText>
-            <BannerTitle>Agence digitale performante</BannerTitle>
+            <BannerTitle>Agence digitale<br />performante</BannerTitle>
             <BannerParagraph>
               Créons ensemble une stratégie d'acquisition performante <br />
               pour conquérir vos nouveaux clients.
