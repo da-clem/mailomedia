@@ -22,7 +22,7 @@ function App({ location }) {
           <title>Mailo Media | Agence digitale performante</title>
         </Helmet>
         <Switch location={location}>
-          <Route exact path="/portfolio" component={lazy(() => import('./PortfolioPage'))} />
+          <Route path="/portfolio" component={lazy(() => import('./PortfolioPage'))} />
           <Route exact path="/" component={lazy(() => import('./HomePage'))} />
         </Switch>
         <Imports />

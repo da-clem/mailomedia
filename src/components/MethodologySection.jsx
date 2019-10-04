@@ -157,15 +157,15 @@ export default function MethodologySection() {
             <hr className="border-white" />
           </Slide>
           <Slide right>
-            <p className="mb-5 px-10">
+            <p className="mb-5 px-lg-10">
               <strong>Chaque projet est unique </strong>
               mais notre approche est toujours la même.<br /> Pourquoi ? Parce qu’elle marche.
-              <br /><br />
+              <br /><br className="d-none d-lg-block" />
                Notre approche méthodique dans la gestion des campagnes
               digitales confiées nous permet d’obtenir{" "}
               <strong>
                 les meilleurs résultats de croissance dans les meilleurs délais.
-                <br /><br />
+                <br /><br className="d-none d-lg-block" />
                 Grâce à la qualité et la maîtrise de nos contenus vous gagnez en
                 visibilité et touchez une audience affinitaire pour votre marque.
               </strong>
