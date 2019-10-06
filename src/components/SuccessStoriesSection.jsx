@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { Slide } from "react-reveal"
-import { PierreRicaud, VoyagePrivee, Evaneos } from "./icons";
+import { Fade } from "react-reveal"
+import { PierreRicaud, VoyagePrivee, Evaneos, ChevronDown } from "./icons";
 import { SuccessStoriesBlob } from "./blobs";
+
+const ChevronRight = styled(ChevronDown)`
+  transform: scale(2) rotate(-90deg) translate(0, -50%) !important;
+`
+
+const ChevronLeft = styled(ChevronDown)`
+  transform: scale(2) rotate(90deg) translate(0, 50%) !important;
+`
 
 const SuccessStoriesWrapper = styled.div`
   position: relative;
   max-width: 100vw;
   overflow-x: hidden;
+
 `;
 
 const SuccessStoriesBackground = styled(SuccessStoriesBlob)`
@@ -48,8 +57,8 @@ export default function SuccessStoriesSection() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    dots: true,
-    arrows: false,
+    nextArrow: <ChevronRight />,
+    prevArrow: <ChevronLeft />,
     responsive: [
       {
         breakpoint: 600,
@@ -78,13 +87,13 @@ export default function SuccessStoriesSection() {
       <SuccessStoriesContent className="text-white">
         <SuccessStoriesContainer className="container">
           <div>
-            <Slide left>
+            <Fade>
               <h2 className="text-left d-block">Nos Success stories </h2>
               <hr className="ml-0 border-white" />
-            </Slide>
-            <Slide right>
+            </Fade>
+            <Fade>
               <Slider {...settings} >
-                <SuccessStory className="px-1 px-md-2">
+                <SuccessStory className="px-1 px-md-2 px-lg-5">
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
                       <img className="d-inline" src={Evaneos} alt="Evaneos" />
@@ -96,8 +105,8 @@ export default function SuccessStoriesSection() {
                       </p>
                       <hr className="my-2 border-white" />
                       <p className="mb-3">
-                        Enrichir et alimenter le PRM/CRM de la jeune entité en forte
-                        croissance en profils intentionnistes dans l’achat d’un
+                        Enrichir et alimenter le PRM/CRM <br /> de la jeune entité en forte
+                        croissance <br /> en profils intentionnistes dans l’achat d’un
                         voyage
                       </p>
                     </div>
@@ -106,7 +115,7 @@ export default function SuccessStoriesSection() {
                     </button>
                   </div>
                 </SuccessStory>
-                <SuccessStory className="px-1 px-md-2">
+                <SuccessStory className="px-1 px-md-2 px-lg-5">
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
                       <img className="d-inline" src={VoyagePrivee} alt="VoyagePrivee" />
@@ -128,7 +137,7 @@ export default function SuccessStoriesSection() {
                     </button>
                   </div>
                 </SuccessStory>
-                <SuccessStory className="px-1 px-md-2">
+                <SuccessStory className="px-1 px-md-2 px-lg-5">
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
                       <img className="d-inline" src={PierreRicaud} alt="PierreRicaud" />
@@ -149,7 +158,7 @@ export default function SuccessStoriesSection() {
                   </div>
                 </SuccessStory>
               </Slider>
-            </Slide>
+            </Fade>
           </div>
         </SuccessStoriesContainer>
       </SuccessStoriesContent>

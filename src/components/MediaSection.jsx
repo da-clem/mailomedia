@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade, Slide } from "react-reveal";
+import { Fade } from "react-reveal";
 import { StrategyBlob } from "./blobs"
 import {
   OptIn,
@@ -46,11 +46,11 @@ export default function MediaSection() {
     <div className="">
       <div className="bg-light py-5">
         <div className="container">
-          <Slide left>
+          <Fade>
             <h2 className="text-primary">Notre réseau médias France & Europe</h2>
             <hr className="border-primary ml-0 pb-2" />
-          </Slide>
-          <Slide right cascade>
+          </Fade>
+          <Fade cascade>
             <div className="d-flex justify-content-between text-center flex-wrap">
               <MediaCard>
                 <img src={PartenairesMedia} alt="PartenairesMedia" />
@@ -100,7 +100,7 @@ export default function MediaSection() {
                 </p>
               </MediaCard>
             </div>
-          </Slide>
+          </Fade>
 
         </div>
         <MediaPartnersSection />
@@ -111,14 +111,14 @@ export default function MediaSection() {
           <StrategyContent>
             <div className="container text-white">
               <div className="row">
-                <Fade left>
+                <Fade>
                   <div className="col-12 col-md-6">
                     <h2>
                       Vous êtes ici pour propulser votre stratégie digitale ?
                     </h2>
                   </div>
                 </Fade>
-                <Fade right>
+                <Fade>
                   <div className="col-12 col-md-6 d-flex align-items-center justify-content-end">
                     <button className="btn btn-light">
                       DECOUVRIR NOS SOLUTIONS

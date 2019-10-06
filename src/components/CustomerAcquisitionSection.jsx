@@ -1,23 +1,23 @@
 import React from "react";
-import { Slide, Fade } from "react-reveal";
+import { Fade } from "react-reveal";
 import { Performance, Expertise, Social, Transparence } from "./icons";
 
 export default function CustomerAcquisitionSection() {
   return (
     <div className="container text-center pt-4" id="solutions">
-      <Slide left>
+      <Fade>
         <h2 className="text-primary">A la conquête de nouveaux clients</h2>
         <hr className="border-primary" />
-      </Slide>
-      <Slide right>
+      </Fade>
+      <Fade>
         <p className="font-weight-bold text-uppercase mb-2">L’ADN PARFAITE : </p>
         <p className="mb-6">
           Nos valeurs sont nos piliers fondateurs depuis maintenant plus de 5 ans.
           Vous souhaitez un engagement ? Le voici :
         </p>
-      </Slide>
+      </Fade>
       <section className="row">
-        <Fade left>
+        <Fade>
           <div className="col-12 col-lg-6 pb-2">
             <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5 bg-gradient-secondary text-white">
               <header>
@@ -32,7 +32,7 @@ export default function CustomerAcquisitionSection() {
             </article>
           </div>
         </Fade>
-        <Fade right>
+        <Fade>
           <div className="col-12 col-lg-6 pb-2">
             <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5">
               <header>
@@ -47,7 +47,7 @@ export default function CustomerAcquisitionSection() {
             </article>
           </div>
         </Fade>
-        <Fade left>
+        <Fade>
           <div className="col-12 col-lg-6 pb-2">
             <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5">
               <header>
@@ -63,7 +63,7 @@ export default function CustomerAcquisitionSection() {
             </article>
           </div>
         </Fade>
-        <Fade right>
+        <Fade>
           <div className="col-12 col-lg-6 pb-2">
             <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5 bg-gradient-primary text-white">
               <header>

@@ -6,7 +6,7 @@ export default function ProjectManagerSection() {
   return (
     <div className="container py-4">
       <div className="row">
-        <Fade left>
+        <Fade>
           <div className="col-12 col-lg-5">
             <img
               src={ProjectManager}
@@ -15,7 +15,7 @@ export default function ProjectManagerSection() {
             />
           </div>
         </Fade>
-        <Fade cascade right>
+        <Fade cascade>
           <div className="col-12 col-lg-7">
             <h2 className="text-primary">
               Un interlocuteur unique, notre chef de projet.

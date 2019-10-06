@@ -31,7 +31,7 @@ const SimpleValuePropCardIcon = styled.img`
 export default function SimpleValuePropSection() {
   return (
     <SimpleValuePropWrapper className="container text-center">
-      <Fade left cascade>
+      <Fade cascade>
         <div className="row">
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">

@@ -101,11 +101,11 @@ export default function ValuePropSection() {
   return (
     <div className="my-4 text-center">
       <div className="container">
-        <Fade left>
+        <Fade>
           <h2 className="text-primary">Ce que nous maîtrisons à la perfection</h2>
           <hr className="border-primary" />
         </Fade>
-        <Fade right>
+        <Fade>
           <p className="mb-4">
             Notre rôle est de vous assurer une connaissance complète des différents
             canaux utilisés, pour vous proposer une stratégie digitale qui sera un

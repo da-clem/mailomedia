@@ -22,7 +22,6 @@ import {
   MediaTF,
   MediaTurbo,
   MediaVanity,
-  MediaVerychic,
   MediaVogue,
 } from "./icons";
 
@@ -71,10 +70,10 @@ export default function MediaPartners() {
 
   return (
     <div className="container pt-4 pb-8">
-      <Slide left>
+      <Slide>
         <h2 className="text-primary">Nos Partenaires Médias</h2>
         <hr className="border-primary ml-0 pb-2" />
-        <Slide left>
+        <Slide>
           <Slider {...settings} >
             <CustomerCard>
               <CustomerLogo src={MediaAutoplus} alt="MediaAutoplus" />
@@ -132,9 +131,6 @@ export default function MediaPartners() {
             </CustomerCard>
             <CustomerCard>
               <CustomerLogo src={MediaVanity} alt="MediaVanity" />
-            </CustomerCard>
-            <CustomerCard>
-              <CustomerLogo src={MediaVerychic} alt="MediaVerychic" />
             </CustomerCard>
             <CustomerCard>
               <CustomerLogo src={MediaVogue} alt="MediaVogue" />

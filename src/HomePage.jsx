@@ -11,12 +11,14 @@ import {
   MediaSection,
   ValuePropSection,
   MapSection,
-  ProjectManagerSection
+  ProjectManagerSection,
+  Navbar
 } from "./components";
 
 export default function HomePage() {
   return (
     <div>
+      <Navbar />
       <Fade>
         <BannerSection />
       </Fade>

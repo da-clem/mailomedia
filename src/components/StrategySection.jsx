@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Slide } from "react-reveal";
+import { Fade } from "react-reveal";
 
 const StrategyWrapper = styled.div`
   margin-bottom: 150px;
@@ -19,13 +19,13 @@ const Button = styled.button`
 export default function StrategySection() {
   return (
     <StrategyWrapper className="container text-center pt-4" id="agency">
-      <Slide left>
+      <Fade>
         <h2 className="text-primary">
           Besoin de propulser votre stratégie d'acquisition ?
         </h2>
         <hr className="border-primary" />
-      </Slide>
-      <Slide right>
+      </Fade>
+      <Fade>
         <p>
           Nous disposons de toutes les solutions marketing adaptées en réponse à
           vos objectifs publicitaires{" "}
@@ -42,7 +42,7 @@ export default function StrategySection() {
           objectifs.
         </p>
         <Button className="btn btn-primary">DECOUVRIR L’AGENCE</Button>
-      </Slide>
+      </Fade>
     </StrategyWrapper>
   );
 }

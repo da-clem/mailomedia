@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-reveal";
+import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import styled from "styled-components"
 import {
@@ -16,6 +16,9 @@ import {
   HomairGray,
   DartyGray,
   BlancheporteGray,
+  VerychicGray,
+  GFGray,
+  TUIGray,
 } from "./icons";
 
 const CustomerCard = styled.div`
@@ -63,7 +66,7 @@ export default function CustomersSection() {
 
   return (
     <div className="container my-10">
-        <Slide left>
+        <Fade>
           <Slider {...settings} >
             <CustomerCard>
               <CustomerLogo src={VoyagePriveeGray} alt="VoyagePriveeGray" />
@@ -105,8 +108,17 @@ export default function CustomersSection() {
             <CustomerCard>
               <CustomerLogo src={IneldeaGray} alt="IneldeaGray" />
             </CustomerCard>
+            <CustomerCard>
+              <CustomerLogo src={TUIGray} alt="TUIGray" />
+            </CustomerCard>
+            <CustomerCard>
+              <CustomerLogo src={VerychicGray} alt="VerychicGray" />
+            </CustomerCard>
+            <CustomerCard>
+              <CustomerLogo src={GFGray} alt="GFGray" />
+            </CustomerCard>
           </Slider>
-        </Slide>
+        </Fade>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { Slide, Fade } from "react-reveal";
+import { Fade } from "react-reveal";
 import { MethodologyBlob } from "./blobs";
 import { ChevronDown, ArrowControl } from "./icons";
 
@@ -152,11 +152,11 @@ export default function MethodologySection() {
       <MethodologyBackground />
       <MethodologyContent>
         <div className="container text-center text-white">
-          <Slide left>
+          <Fade>
             <h2>Une approche méthodologique et efficace</h2>
             <hr className="border-white" />
-          </Slide>
-          <Slide right>
+          </Fade>
+          <Fade>
             <p className="mb-5 px-lg-10">
               <strong>Chaque projet est unique </strong>
               mais notre approche est toujours la même.<br /> Pourquoi ? Parce qu’elle marche.
@@ -171,7 +171,7 @@ export default function MethodologySection() {
               </strong>
             </p>
             <ChevronDown className="d-none d-lg-block m-auto" />
-          </Slide>
+          </Fade>
         </div>
       </MethodologyContent>
       <Fade>

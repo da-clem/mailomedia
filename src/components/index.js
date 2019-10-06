@@ -1,3 +1,4 @@
+export { default as Navbar } from "./Navbar";
 export { default as BannerSection } from "./BannerSection";
 export { default as SimpleValuePropSection } from "./SimpleValuePropSection";
 export { default as SuccessStoriesSection } from "./SuccessStoriesSection";
