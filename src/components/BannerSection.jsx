@@ -211,7 +211,7 @@ export default function BannerSection() {
                 <BannerNavLink onClick={(e) => scrollToSection("solutions", e)}>
                   Solutions
                 </BannerNavLink>
-                <BannerNavLink to="/portfolio/evaneos">
+                <BannerNavLink to="/portfolio/darty">
                   Portfolio
                 </BannerNavLink>
                 <BannerNavLink onClick={(e) => scrollToSection("contact", e)}>

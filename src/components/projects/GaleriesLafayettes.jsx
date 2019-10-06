@@ -1,4 +1,5 @@
 import React from 'react'
+import { BGGaleriesLafayettes } from '../icons'
 
 export default function GaleriesLafayettes() {
   return (
@@ -29,7 +30,9 @@ export default function GaleriesLafayettes() {
           </div>
         </div>
       </div>
-      <div className="bg-light py-10 w-100"></div>
+      <div className="bg-light w-100">
+        <img alt="BGGaleriesLafayettes" src={BGGaleriesLafayettes} className="w-100 object-cover" />
+      </div>
       <div className="d-flex justify-content-center text-center py-3 px-lg-10">
         <p>
           Nous accompagnons les Galeries Lafayette

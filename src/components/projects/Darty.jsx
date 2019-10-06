@@ -1,4 +1,5 @@
 import React from 'react'
+import { BGDarty } from '../icons'
 
 export default function Darty() {
   return (
@@ -29,7 +30,9 @@ export default function Darty() {
           </div>
         </div>
       </div>
-      <div className="bg-light py-10 w-100"></div>
+      <div className="bg-light w-100">
+        <img alt="BGDarty" src={BGDarty} className="w-100 object-cover" />
+      </div>
       <div className="d-flex justify-content-center text-center py-3 px-lg-10">
         <p>
           Nous accompagnons la marque dans ses
