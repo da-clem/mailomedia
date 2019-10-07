@@ -43,7 +43,7 @@ function PortfolioPage({ location }) {
     <div className="container">
       <div className="d-flex align-items-center justify-content-between pt-4 pb-2">
         <BackLink to="/"><Arrow /></BackLink>
-        <h2>Portfolio</h2>
+        <h2>Succes Stories</h2>
         <br />
       </div>
       <Tabs className="d-flex justify-content-start justify-content-lg-end">
