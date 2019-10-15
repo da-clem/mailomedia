@@ -3,10 +3,10 @@ import { BGPierreRicaud } from '../icons'
 
 export default function PierreRicaud() {
   return (
-    <div className="pb-8">
+    <div className="pb-5">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
-          <h1>Dr Pierre Ricáud</h1>
+          <h1>Dr Pierre Ricaud</h1>
           <p className="text-primary small">#CAC #EUROPE #MULTICANAL #MAKEUP</p>
         </div>
         <div className="col-12 col-lg-6 d-flex justify-content-around justify-content-lg-end mt-2 mt-lg-0">
@@ -35,12 +35,14 @@ export default function PierreRicaud() {
       </div>
       <div className="d-flex justify-content-center text-center py-3 px-lg-10">
         <p>
-          Nous contribuons à rendre l’image de
-          marque plus forte en Europe (France,
-          Belgique, Allemagne...) à travers des
-          opérations d’enrichissement de profils du
-          PRM/CRM en nouvelles clientes avec un
-          objectif de CAC.
+          L’enseigne Dr Pierre Ricaud est notre cliente depuis 2017 et appartient au groupe Yves Rocher.
+          Nous avons été sollicités, afin d’<strong>acquérir de nouveaux clients</strong>, avec un <strong>coût d'acquisition
+          compétitif</strong>. Notre action a été conduite avec succès, à l'<strong>échelle européenne</strong> et a fait l’objet de
+          campagnes de "collecte" (enrichissement de la base de données) et d’opérations
+          évènementielles sur les <strong>réseaux sociaux</strong>.<br /><br />
+          Nous contribuons à rendre l’image de marque plus forte en Europe (France, Belgique,
+          Allemagne...) à travers des opérations d’enrichissement de profils du PRM/CRM en nouvelles
+          clientes avec un objectif de CAC (coût d’acquisition par nouvelle cliente).
         </p>
       </div>
       <div className="row">

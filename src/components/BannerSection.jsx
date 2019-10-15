@@ -55,6 +55,10 @@ const BannerTitle = styled.h1`
   font-weight: bold;
   letter-spacing: -2px;
   margin-bottom: 30px;
+
+  @media (min-width: 900px) {
+    font-size: 70px;
+  }
 `;
 
 const BannerParagraph = styled.p`
@@ -62,6 +66,10 @@ const BannerParagraph = styled.p`
   line-height: 33px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 900px) {
+    font-size: 21px;
+  }
 `;
 
 const ArrowButton = styled.button`
@@ -88,7 +96,7 @@ const ArrowButton = styled.button`
 
 export default function BannerSection() {
   return (
-    <BannerWrapper>
+    <BannerWrapper id="home">
       <BannerBackground />
       <BannerContent className="pb-9 pb-md-0">
         <BannerContainer className="container">

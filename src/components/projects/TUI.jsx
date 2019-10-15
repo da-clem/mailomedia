@@ -3,7 +3,7 @@ import { BGTUI } from '../icons'
 
 export default function TUI() {
   return (
-    <div className="pb-8">
+    <div className="pb-5">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
           <h1>TUI</h1>
@@ -35,12 +35,13 @@ export default function TUI() {
       </div>
       <div className="d-flex justify-content-center text-center py-3 px-lg-10">
         <p>
-          Nous pilotons la diffusion des campagnes
-          de ventes directes en e-mailing avec pour
-          objectif principal de toujours diminuer le
-          COS dans un contexte concurrentiel très
-          fort et des périodes commerciales
-          saisonnières.
+          TUI avait pour ambition de <strong>générer davantage de réservations</strong>.<br /><br />
+          Cet objectif a eu pour contrainte financière, la maîtrise du coût client par rapport au montant de
+          la vente (COS) dans un contexte concurrentiel très fort et une période commerciales saisonnières.
+          Les canaux utilisés pour l’atteindre ont été l'<strong>e-mailing</strong>, les <strong>médias sociaux</strong> et le <strong>display</strong>. A l’issue de
+          cette opération réussie, nous avons effectué une veille concurrentielle, ayant généré des
+          recommandations utiles à notre client.<br /><br />
+          Notre maîtrise des outils publicitaires nous a permis d’optimiser les réservations en période <strong>d’Early Booking</strong>!
         </p>
       </div>
       <div className="row">

@@ -2,15 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Fade } from "react-reveal"
-import { PierreRicaud, VoyagePrivee, Evaneos, ChevronDown } from "./icons";
+import { PierreRicaud, TUIGray, DartyGray, GFGray, ChevronDown } from "./icons";
 import { SuccessStoriesBlob } from "./blobs";
 
 const ChevronRight = styled(ChevronDown)`
   transform: scale(2) rotate(-90deg) translate(0, -50%) !important;
+
+  * {
+    pointer-events: none;
+  }
 `
 
 const ChevronLeft = styled(ChevronDown)`
   transform: scale(2) rotate(90deg) translate(0, 50%) !important;
+
+  * {
+    pointer-events: none;
+  }
 `
 
 const SuccessStoriesWrapper = styled.div`
@@ -48,6 +56,7 @@ const SuccessStory = styled.article`
 
   img {
     height: 65px;
+    filter: brightness(1000%) contrast(100%);
   }
 `;
 
@@ -96,18 +105,18 @@ export default function SuccessStoriesSection() {
                 <SuccessStory className="px-1 px-md-2 px-lg-5">
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
-                      <img className="d-inline" src={Evaneos} alt="Evaneos" />
-                      <h3 className="pt-2">Evaneos</h3>
+                      <img className="d-inline" src={DartyGray} alt="DartyGray" />
+                      <h3 className="pt-2">Darty</h3>
                       <p className="small font-weight-lighter">
-                        #ROI #EMAILING
-                        <br />
-                        #EUROPE
+                        #ROI #COS <br />#PERFORMANCE #HIGHTECH
                       </p>
                       <hr className="my-2 border-white" />
                       <p className="mb-3">
-                        Enrichir et alimenter le PRM/CRM <br /> de la jeune entité en forte
-                        croissance <br /> en profils intentionnistes dans l’achat d’un
-                        voyage
+                        Nous accompagnons la marque dans ses
+                        périodes commerciales fortes (soldes, Black
+                        friday...) pour atteindre ses objectifs
+                        d’acquisition de nouveaux clients et de
+                        conversions dans un contexte très ROIste.
                       </p>
                     </div>
                     <button className="btn btn-secondary w-100">
@@ -118,18 +127,19 @@ export default function SuccessStoriesSection() {
                 <SuccessStory className="px-1 px-md-2 px-lg-5">
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
-                      <img className="d-inline" src={VoyagePrivee} alt="VoyagePrivee" />
-                      <h3 className="pt-2">Voyages Privés</h3>
+                      <img className="d-inline" src={TUIGray} alt="TUIGray" />
+                      <h3 className="pt-2">TUI</h3>
                       <p className="small font-weight-lighter">
-                        #COS #ACQUISITION
-                        <br />
-                        #PERF
+                        #ROI #EMAILING <br />#COS #TRAVEL
                       </p>
                       <hr className="my-2 border-white" />
                       <p className="mb-3">
-                        Accompagner la marque dans ses périodes commerciales fortes
-                        pour atteindre ses objectifs d’acquisition de nouveaux
-                        clients dans un contexte de performance
+                        Nous pilotons la diffusion des campagnes
+                        de ventes directes en e-mailing avec pour
+                        objectif principal de toujours diminuer le
+                        COS dans un contexte concurrentiel très
+                        fort et des périodes commerciales
+                        saisonnières.
                       </p>
                     </div>
                     <button className="btn btn-secondary w-100">
@@ -141,15 +151,40 @@ export default function SuccessStoriesSection() {
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
                       <img className="d-inline" src={PierreRicaud} alt="PierreRicaud" />
-                      <h3 className="pt-2">Dr Pierre Ricaud</h3>
+                      <h3 className="pt-2">DR PIERRE RICAUD <br />(Yves Rocher groupe)</h3>
                       <p className="small font-weight-lighter">
-                        #EUROPE #MULTICANAL<br />#NEWCUSTOMERS
+                        #CAC #EUROPE <br />#MULTICANAL #MAKEUP
                       </p>
                       <hr className="my-2 border-white" />
                       <p className="mb-3">
-                        Contribuer à rendre l’image de marque plus forte en Europe,
-                        alimenter le PRM/CRM en nouvelles clientes et générer des
-                        ventes sur les périodes fortes.
+                        Nous contribuons à rendre l’image de
+                        marque plus forte en Europe (France,
+                        Belgique, Allemagne...) à travers des
+                        opérations d’enrichissement de profils du
+                        PRM/CRM en nouvelles clientes avec un
+                        objectif de CAC.
+                      </p>
+                    </div>
+                    <button className="btn btn-secondary w-100">
+                      en savoir plus
+                    </button>
+                  </div>
+                </SuccessStory>
+                <SuccessStory className="px-1 px-md-2 px-lg-5">
+                  <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
+                    <div>
+                      <img className="d-inline" src={GFGray} alt="GFGray" />
+                      <h3 className="pt-2">GALERIES LAFAYETTES</h3>
+                      <p className="small font-weight-lighter">
+                        #COS #SOLDES <br /> #BLACKFRIDAY #FRENCHDAYS
+                      </p>
+                      <hr className="my-2 border-white" />
+                      <p className="mb-3">
+                        Nous accompagnons les Galeries Lafayette
+                        sur leur problématique d’acquisition durant
+                        leurs temps forts commerciaux : 3J, soldes,
+                        Black Friday, French Days. Délais très courts
+                        et objectif de COS sont au rendez-vous!
                       </p>
                     </div>
                     <button className="btn btn-secondary w-100">

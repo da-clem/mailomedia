@@ -3,10 +3,10 @@ import { BGGaleriesLafayettes } from '../icons'
 
 export default function GaleriesLafayettes() {
   return (
-    <div className="pb-8">
+    <div className="p5-8">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
-          <h1>Galeries Lafayettes</h1>
+          <h1>Les Galeries Lafayette</h1>
           <p className="text-primary small">#COS #SOLDES #BLACKFRIDAY #FRENCHDAYS</p>
         </div>
         <div className="col-12 col-lg-6 d-flex justify-content-around justify-content-lg-end mt-2 mt-lg-0">
@@ -35,11 +35,14 @@ export default function GaleriesLafayettes() {
       </div>
       <div className="d-flex justify-content-center text-center py-3 px-lg-10">
         <p>
-          Nous accompagnons les Galeries Lafayette
-          sur leur problématique d’acquisition durant
-          leurs temps forts commerciaux : 3J, soldes,
-          Black Friday, French Days. Délais très courts
-          et objectif de COS sont au rendez-vous!
+          Les Galeries Lafayette ont sollicité notre intervention, afin de mener à bien des actions fortes,
+          durant les périodes commerciales relatives aux 3J et aux soldes.<br /><br />
+          L'objectif premier était de <strong>favoriser un plus gros volume de ventes</strong>, en privilégiant une approche
+          de conquêtes de nouveaux clients mixant deux objectifs : COS (coût par vente) et CAC (coût
+          d’acquisition par nouveau client).<br /><br />
+          Compte tenu de la contrainte de temps à laquelle nous avons dû faire face, nous avons opté
+          pour des campagnes e-mailing et display destinées à mettre en avant les produits d’appel. Notre
+          <strong>engagement de performance</strong> a été respecté grâce à notre parfaite maîtrise du <strong>coût par vente</strong>.
         </p>
       </div>
       <div className="row">

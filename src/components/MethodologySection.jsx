@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Fade } from "react-reveal";
@@ -75,14 +75,12 @@ const MethodologyCard = styled.div`
   justify-content: center;
   align-items: center;
 
-  &:hover {
-    ${MethodologyBulletPoints} {
-      opacity: 1;
-    }
+  ${MethodologyBulletPoints} {
+    opacity: ${({ active }) => active ? 1 : 0};
+  }
 
-    ${MethodologyChevronDown} {
-      transform: rotate(180deg);
-    }
+  ${MethodologyChevronDown} {
+    transform: ${({ active }) => active ? 'rotate(180deg)' : ''};
   }
 `;
 
@@ -119,6 +117,7 @@ const MethodologyArrowControl = styled(ArrowControl)`
 `
 
 export default function MethodologySection() {
+  const [active, setActive] = useState(0)
 
   const settings = {
     infinite: false,
@@ -177,7 +176,11 @@ export default function MethodologySection() {
       <Fade>
         <MethodologySlider className="container">
           <Slider {...settings}>
-            <MethodologyCard>
+            <MethodologyCard
+              active={active === 0}
+              onMouseEnter={() => setActive(0)}
+              onMouseLeave={() => setActive(false)}
+            >
               <MethodologyCardContent>
                 <MethodologyCardNumber className="bg-secondary">
                   01.
@@ -197,7 +200,11 @@ export default function MethodologySection() {
                 </MethodologyBulletPoint>
               </MethodologyBulletPoints>
             </MethodologyCard>
-            <MethodologyCard>
+            <MethodologyCard
+              active={active === 1}
+              onMouseEnter={() => setActive(1)}
+              onMouseLeave={() => setActive(false)}
+            >
               <MethodologyCardContent>
                 <MethodologyCardNumber className="bg-secondary">
                   02.
@@ -219,7 +226,11 @@ export default function MethodologySection() {
                 </MethodologyBulletPoint>
               </MethodologyBulletPoints>
             </MethodologyCard>
-            <MethodologyCard>
+            <MethodologyCard
+              active={active === 2}
+              onMouseEnter={() => setActive(2)}
+              onMouseLeave={() => setActive(false)}
+            >
               <MethodologyCardContent>
                 <MethodologyCardNumber className="bg-secondary">
                   03.
@@ -242,7 +253,11 @@ export default function MethodologySection() {
                 </MethodologyBulletPoint>
               </MethodologyBulletPoints>
             </MethodologyCard>
-            <MethodologyCard>
+            <MethodologyCard
+              active={active === 3}
+              onMouseEnter={() => setActive(3)}
+              onMouseLeave={() => setActive(false)}
+            >
               <MethodologyCardContent>
                 <MethodologyCardNumber className="bg-secondary">
                   04.

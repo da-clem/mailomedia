@@ -41,9 +41,12 @@ const Tab = styled(Link)`
 function PortfolioPage({ location }) {
   return (
     <div className="container">
-      <div className="d-flex align-items-center justify-content-between pt-4 pb-2">
+      <div className="d-flex justify-content-between pt-4 pb-2">
         <BackLink to="/"><Arrow /></BackLink>
-        <h2>Succes Stories</h2>
+        <div>
+          <h2 className="mb-2">Succes Stories</h2>
+          <hr className="border-primary my-0" />
+        </div>
         <br />
       </div>
       <Tabs className="d-flex justify-content-start justify-content-lg-end">
@@ -57,7 +60,7 @@ function PortfolioPage({ location }) {
           TUI
         </Tab>
         <Tab to="/portfolio/galeries" active={location.pathname === "/portfolio/galeries"}>
-          Galeries Lafayettes
+          Galeries Lafayette
         </Tab>
       </Tabs>
 
@@ -69,6 +72,11 @@ function PortfolioPage({ location }) {
           <Route exact path="/portfolio/galeries" component={lazy(() => import('./components/projects/GaleriesLafayettes'))} />
         </Fade>
       </Switch>
+      <div className="d-flex align-items-center justify-content-center mb-4">
+        <Link to="/" className="btn btn-secondary">
+          Nous Contacter
+        </Link>
+      </div>
     </div>
   );
 }

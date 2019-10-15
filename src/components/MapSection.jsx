@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Marker as MarkerIcon, LinkedIn, Envelope } from "./icons";
+import React, { useState, Fragment } from "react";
+import { Marker as MarkerIcon } from "./icons";
 import ReactMapGL, { Marker } from "react-map-gl";
 import styled from "styled-components";
 
@@ -29,9 +29,15 @@ const BulletPoint = styled.li`
   }
 `;
 
+const Modal = styled.div`
+  display: ${({ open }) => open ? 'block' : 'none'} !important;
+`
+
 export default function MapSection() {
   const latitude = 43.699298;
   const longitude = 7.266372;
+
+  const [modalOpen, setModalOpen] = useState(false)
 
   const [map, setMap] = useState({
     viewport: {
@@ -44,6 +50,7 @@ export default function MapSection() {
   });
 
   return (
+    <Fragment>
     <div className="bg-gradient-primary" id="contact">
       <section className="container pt-8 pb-10">
         <div className="row bg-white shadow">
@@ -70,17 +77,18 @@ export default function MapSection() {
                 <div className="col-12 mb-1 d-flex">
                   <dt className="text-uppercase mr-1 text-primary">a</dt>
                   <dd className="font-weight-light">
-                    11, avenue du Maréchal Joffre - 06000 NICE
+                    Agence Mailomedia SAS <br/>
+                    37/41, boulevard Dubouchage - 06000 Nice
                   </dd>
                 </div>
                 <div className="col-12 mb-1 d-flex">
                   <dt className="text-uppercase mr-1 text-primary">t</dt>
-                  <dd className="font-weight-light">04 01 02 03 04</dd>
+                  <dd className="font-weight-light">04 93 81 57 15</dd>
                 </div>
                 <div className="col-12 mb-1 d-flex">
                   <dt className="text-uppercase mr-1 text-primary">e</dt>
                   <dd className="font-weight-light">
-                    contact@agence-mailomedia.com
+                    hello@agence-mailomedia.com
                   </dd>
                 </div>
               </div>
@@ -88,26 +96,18 @@ export default function MapSection() {
             <h3>Vous avez des questions concernant :</h3>
             <BulletPoints>
               <BulletPoint className="mt-3">
-                <strong className="w-100">LA MONETISATION ?</strong>
+                <strong className="w-100">Nos services?</strong>
                 <br />
-                <span className="w-100 d-flex justify-content-between">
-                  Contactez Mélanie Royent
-                  <span>
-                    <img src={LinkedIn} alt="LinkedIn" className="mr-1" />
-                    <img src={Envelope} alt="Envelope" />
-                  </span>
-                </span>
+                <p>
+                  hello@agence-mailomedia.com
+                </p>
               </BulletPoint>
               <BulletPoint className="mt-3">
-                <strong className="w-100">LES PARTENARIATS ?</strong>
+                <strong className="w-100">Un partenariat média ?</strong>
                 <br />
-                <span className="w-100 d-flex justify-content-between">
-                  Contactez Laurent Mouret
-                  <span>
-                    <img src={LinkedIn} alt="LinkedIn" className="mr-1" />
-                    <img src={Envelope} alt="Envelope" />
-                  </span>
-                </span>
+                <p>
+                  medias@agence-mailomedia.com
+                </p>
               </BulletPoint>
             </BulletPoints>
           </div>
@@ -122,24 +122,49 @@ export default function MapSection() {
             <div className="px-2">
               <p className="font-weight-bold">Nice</p>
               <p>
-                37 bd Dubouchage <br /> FRANCE
+                37/41, boulevard Dubouchage<br /> 06000 Nice FRANCE
               </p>
             </div>
             <div className="px-2">
               <p className="font-weight-bold">Contact</p>
               <p>
-                06 00 00 00 00 <br />
-                info@mailomedia.com
+                04 93 81 57 15<br />
+                helllo@mailomedia.com
               </p>
             </div>
           </div>
         </section>
-        <section className="bg-gradient-secondary text-white font-weight-bold text-center py-1">
+        <section onClick={() => setModalOpen(true)} className="bg-gradient-secondary text-white font-weight-bold text-center py-1">
           <p>
             Mentions légales - Copyright 2019 Mailomedia - Design Huap Studio
           </p>
         </section>
       </footer>
-    </div>
+      </div>
+      <Modal
+        open={modalOpen}
+        className={`modal fade ${modalOpen ? 'show' : ''}`}
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        ariaLabelledby="exampleModalLabel"
+        ariaHidden={modalOpen}
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Mentions légales</h5>
+              <button type="button" className="close" dataDismiss="modal" ariaLabel="Close" onClick={() => setModalOpen(false)}>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </Modal>
+    </Fragment>
+
   );
 }

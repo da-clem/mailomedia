@@ -79,6 +79,21 @@ const BannerNavToggle = styled.div`
   }
 `;
 
+const BannerNavButton = styled(Link)`
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background: white;
+    color: #32B1E3;
+  }
+`
+
 const BannerNavMenu = styled.div`
   @media screen and (max-width: 900px) {
     position: absolute;
@@ -113,7 +128,7 @@ export default function Navbar() {
       <div className="container d-flex justify-content-between">
         <BannerLogo>
           <span>mailo</span>
-          media
+          media.
         </BannerLogo>
 
         <BannerNav>
@@ -131,9 +146,9 @@ export default function Navbar() {
             <BannerNavLink to="/portfolio/darty">
               Succes Stories
             </BannerNavLink>
-            <BannerNavLink onClick={(e) => scrollToSection("contact", e)}>
-              <strong>Nous parler</strong>
-            </BannerNavLink>
+            <BannerNavButton onClick={(e) => scrollToSection("contact", e)}>
+              Nous parler
+            </BannerNavButton>
           </BannerNavMenu>
         </BannerNav>
       </div>

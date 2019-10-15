@@ -33,9 +33,7 @@ export default function HomePage() {
       <MediaSection />
       <ValuePropSection />
       <ProjectManagerSection />
-      <Fade>
-        <MapSection />
-      </Fade>
+      <MapSection />
     </div>
   );
 }

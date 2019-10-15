@@ -25,6 +25,7 @@ function App({ location }) {
           <Route path="/portfolio" component={lazy(() => import('./PortfolioPage'))} />
           <Route exact path="/" component={lazy(() => import('./HomePage'))} />
         </Switch>
+        <div id="modal-root"></div>
         <Imports />
       </Suspense>
     </ThemeProvider>
