@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Fade } from "react-reveal"
@@ -19,6 +20,12 @@ const ChevronLeft = styled(ChevronDown)`
   * {
     pointer-events: none;
   }
+`
+
+const ButtonLink = styled(Link)`
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 15px;
 `
 
 const SuccessStoriesWrapper = styled.div`
@@ -119,9 +126,9 @@ export default function SuccessStoriesSection() {
                         conversions dans un contexte très ROIste.
                       </p>
                     </div>
-                    <button className="btn btn-secondary w-100">
+                    <ButtonLink to="/portfolio/darty" className="btn btn-secondary w-100">
                       en savoir plus
-                    </button>
+                    </ButtonLink>
                   </div>
                 </SuccessStory>
                 <SuccessStory className="px-1 px-md-2 px-lg-5">
@@ -142,9 +149,9 @@ export default function SuccessStoriesSection() {
                         saisonnières.
                       </p>
                     </div>
-                    <button className="btn btn-secondary w-100">
+                    <ButtonLink to="/portfolio/tui" className="btn btn-secondary w-100">
                       en savoir plus
-                    </button>
+                    </ButtonLink>
                   </div>
                 </SuccessStory>
                 <SuccessStory className="px-1 px-md-2 px-lg-5">
@@ -165,16 +172,16 @@ export default function SuccessStoriesSection() {
                         objectif de CAC.
                       </p>
                     </div>
-                    <button className="btn btn-secondary w-100">
+                    <ButtonLink to="/portfolio/pierre-ricaud" className="btn btn-secondary w-100">
                       en savoir plus
-                    </button>
+                    </ButtonLink>
                   </div>
                 </SuccessStory>
                 <SuccessStory className="px-1 px-md-2 px-lg-5">
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
                       <img className="d-inline" src={GFGray} alt="GFGray" />
-                      <h3 className="pt-2">GALERIES LAFAYETTES</h3>
+                      <h3 className="pt-2">GALERIES LAFAYETTE</h3>
                       <p className="small font-weight-lighter">
                         #COS #SOLDES <br /> #BLACKFRIDAY #FRENCHDAYS
                       </p>
@@ -187,9 +194,9 @@ export default function SuccessStoriesSection() {
                         et objectif de COS sont au rendez-vous!
                       </p>
                     </div>
-                    <button className="btn btn-secondary w-100">
+                    <ButtonLink to="/portfolio/galeries" className="btn btn-secondary w-100">
                       en savoir plus
-                    </button>
+                    </ButtonLink>
                   </div>
                 </SuccessStory>
               </Slider>
