@@ -122,7 +122,7 @@ export default function ValuePropSection() {
   };
 
   return (
-    <div className="my-4 text-center">
+    <div className="my-4 text-center" id="perfection">
       <div className="container">
         <Fade>
           <h2 className="text-primary">Ce que nous maîtrisons à la perfection</h2>
@@ -164,7 +164,7 @@ export default function ValuePropSection() {
             <ValuePropCard className="p-lg-4 p-2">
               <header>
                 <img src={CoRegistration} alt="CoRegistration" />
-                <h3 className="pt-2 pb-1">Co-Registration</h3>
+                <h3 className="pt-2 pb-1">Coregistration</h3>
               </header>
               <p className="text-justify">
                 Nous profitons des dynamiques d’information des meilleures sources
@@ -213,10 +213,7 @@ export default function ValuePropSection() {
                 objectifs : notoriété, fidélisation et performance.
                 <br />
                 <br />
-                Quelle que soit votre problématique - développement des ventes,
-                collecte de leads qualifiés, priorisation de votre audience
-                locale, développement de votre notoriété ou diffusion de vos
-                publicités sur les réseaux sociaux - nos chefs de projets vous
+                Quelle que soit votre problématique - nos chefs de projets vous
                 accompagnent dans votre stratégie sur les médias sociaux.
               </p>
             </ValuePropCard>

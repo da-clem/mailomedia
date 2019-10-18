@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react";
+import { withRouter } from "react-router-dom";
 import { Marker as MarkerIcon } from "./icons";
 import ReactMapGL, { Marker } from "react-map-gl";
 import styled from "styled-components";
@@ -33,7 +34,7 @@ const Modal = styled.div`
   display: ${({ open }) => open ? 'block' : 'none'} !important;
 `
 
-export default function MapSection() {
+export default withRouter(function MapSection({ location }) {
   const latitude = 43.699298;
   const longitude = 7.266372;
 
@@ -77,18 +78,22 @@ export default function MapSection() {
                 <div className="col-12 mb-1 d-flex">
                   <dt className="text-uppercase mr-1 text-primary">a</dt>
                   <dd className="font-weight-light">
-                    Agence Mailomedia SAS <br/>
-                    37/41, boulevard Dubouchage - 06000 Nice
+                    <a href="https://goo.gl/maps/sXE7t7pWcvFJWkF87">
+                      Agence Mailomedia SAS <br />
+                      37/41, boulevard Dubouchage - 06000 Nice
+                    </a>
                   </dd>
                 </div>
                 <div className="col-12 mb-1 d-flex">
                   <dt className="text-uppercase mr-1 text-primary">t</dt>
-                  <dd className="font-weight-light">04 93 81 57 15</dd>
+                  <dd className="font-weight-light">
+                      <a href="tel:0493815715">04 93 81 57 15</a>
+                  </dd>
                 </div>
                 <div className="col-12 mb-1 d-flex">
                   <dt className="text-uppercase mr-1 text-primary">e</dt>
                   <dd className="font-weight-light">
-                    hello@agence-mailomedia.com
+                    <a href="mailto:hello@agence-mailomedia.com">hello@agence-mailomedia.com</a>
                   </dd>
                 </div>
               </div>
@@ -99,14 +104,14 @@ export default function MapSection() {
                 <strong className="w-100">Nos services?</strong>
                 <br />
                 <p>
-                  hello@agence-mailomedia.com
+                  <a href="mailto:hello@agence-mailomedia.com">hello@agence-mailomedia.com</a>
                 </p>
               </BulletPoint>
               <BulletPoint className="mt-3">
                 <strong className="w-100">Un partenariat média ?</strong>
                 <br />
                 <p>
-                  medias@agence-mailomedia.com
+                  <a href="mailto:medias@agence-mailomedia.com">medias@agence-mailomedia.com</a>
                 </p>
               </BulletPoint>
             </BulletPoints>
@@ -122,14 +127,15 @@ export default function MapSection() {
             <div className="px-2">
               <p className="font-weight-bold">Nice</p>
               <p>
-                37/41, boulevard Dubouchage<br /> 06000 Nice FRANCE
+                <a href="https://goo.gl/maps/sXE7t7pWcvFJWkF87" className="text-white">37/41, boulevard Dubouchage<br /> 06000 Nice FRANCE</a>
               </p>
             </div>
             <div className="px-2">
               <p className="font-weight-bold">Contact</p>
               <p>
-                04 93 81 57 15<br />
-                helllo@mailomedia.com
+                <a href="tel:0493815715" className="text-white">04 93 81 57 15</a>
+                <br />
+                <a href="mailto:hello@agence-mailomedia.com" className="text-white">hello@agence-mailomedia.com</a>
               </p>
             </div>
           </div>
@@ -167,4 +173,4 @@ export default function MapSection() {
     </Fragment>
 
   );
-}
+})

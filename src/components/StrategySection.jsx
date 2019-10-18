@@ -17,6 +17,13 @@ const Button = styled.button`
 `;
 
 export default function StrategySection() {
+
+  function scrollToSection(id, e) {
+    e.preventDefault()
+    const target = document.getElementById(id)
+    target.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <StrategyWrapper className="container text-center pt-4" id="agency">
       <Fade>
@@ -41,7 +48,7 @@ export default function StrategySection() {
           et recommandations afin de répondre le plus rapidement possible à vos
           objectifs.
         </p>
-        <Button className="btn btn-primary">DECOUVRIR L’AGENCE</Button>
+        <Button className="btn btn-primary" onClick={(e) => scrollToSection("solutions", e)}>DECOUVRIR L’AGENCE</Button>
       </Fade>
     </StrategyWrapper>
   );

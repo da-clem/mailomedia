@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import Fade from "react-reveal/Fade";
 import {
   BannerSection,
@@ -15,7 +16,15 @@ import {
   Navbar
 } from "./components";
 
-export default function HomePage() {
+export default withRouter(function HomePage({ location }) {
+
+  setTimeout(() => {
+    const target = document.querySelector("#contact-button");
+    if (location.hash && target) {
+        target.click()
+      }
+  }, 1000);
+
   return (
     <div>
       <Navbar />
@@ -36,4 +45,4 @@ export default function HomePage() {
       <MapSection />
     </div>
   );
-}
+})

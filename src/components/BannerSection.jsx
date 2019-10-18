@@ -103,7 +103,7 @@ export default function BannerSection() {
           <BannerText>
             <BannerTitle>Agence digitale<br />performante</BannerTitle>
             <BannerParagraph>
-              Créons ensemble une stratégie d'acquisition performante <br />
+              Créeons ensemble une stratégie d'acquisition performante <br />
               pour conquérir vos nouveaux clients.
               <ArrowButton className="btn btn-secondary">
                 <Arrow />

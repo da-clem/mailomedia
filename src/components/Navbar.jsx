@@ -137,16 +137,16 @@ export default function Navbar() {
             <BannerNavLink onClick={(e) => scrollToSection("home", e)}>
               Accueil
             </BannerNavLink>
-            <BannerNavLink onClick={(e) => scrollToSection("agency", e)}>
+            <BannerNavLink onClick={(e) => scrollToSection("solutions", e)}>
               L’agence
             </BannerNavLink>
-            <BannerNavLink onClick={(e) => scrollToSection("solutions", e)}>
+            <BannerNavLink onClick={(e) => scrollToSection("perfection", e)}>
               Solutions
             </BannerNavLink>
             <BannerNavLink to="/portfolio/darty">
               Succes Stories
             </BannerNavLink>
-            <BannerNavButton onClick={(e) => scrollToSection("contact", e)}>
+            <BannerNavButton onClick={(e) => scrollToSection("contact", e)} id="contact-button">
               Nous parler
             </BannerNavButton>
           </BannerNavMenu>

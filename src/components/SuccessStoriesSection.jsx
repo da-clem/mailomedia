@@ -158,7 +158,7 @@ export default function SuccessStoriesSection() {
                   <div className="h-100 text-center d-flex flex-column align-items-center justify-content-between">
                     <div>
                       <img className="d-inline" src={PierreRicaud} alt="PierreRicaud" />
-                      <h3 className="pt-2">DR PIERRE RICAUD <br />(Yves Rocher groupe)</h3>
+                      <h3 className="pt-2">DR PIERRE RICAUD</h3>
                       <p className="small font-weight-lighter">
                         #CAC #EUROPE <br />#MULTICANAL #MAKEUP
                       </p>

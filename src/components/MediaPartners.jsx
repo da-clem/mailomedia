@@ -44,6 +44,7 @@ export default function MediaPartners() {
     dots: true,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 1600,
     responsive: [
       {
         breakpoint: 600,
@@ -71,7 +72,7 @@ export default function MediaPartners() {
   return (
     <div className="container pt-4 pb-8">
       <Slide>
-        <h2 className="text-primary">Nos Partenaires Médias</h2>
+        <h2 className="text-primary">Nos partenaires médias</h2>
         <hr className="border-primary ml-0 pb-2" />
         <Slide>
           <Slider {...settings} >

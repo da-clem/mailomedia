@@ -40,6 +40,7 @@ export default function CustomersSection() {
     dots: true,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 1600,
     responsive: [
       {
         breakpoint: 600,

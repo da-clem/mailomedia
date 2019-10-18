@@ -6,7 +6,7 @@ export default function Darty() {
     <div className="pb-5">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
-          <h1>DARTY/ Fnac</h1>
+          <h1>DARTY</h1>
           <p className="text-primary small">#ROI #COS #PERFORMANCE #HIGHTECH</p>
         </div>
         <div className="col-12 col-lg-6 d-flex justify-content-around justify-content-lg-end mt-2 mt-lg-0">

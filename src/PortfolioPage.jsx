@@ -38,6 +38,18 @@ const Tab = styled(Link)`
   }
 `
 
+const ContactButton = styled(Link)`
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 20px !important;
+  text-transform: uppercase;
+  font-weight: lighter !important;
+  padding-top: .25rem !important;
+  padding-bottom: .5rem !important;
+  letter-spacing: 2px;
+`
+
 function PortfolioPage({ location }) {
   return (
     <div className="container">
@@ -73,9 +85,9 @@ function PortfolioPage({ location }) {
         </Fade>
       </Switch>
       <div className="d-flex align-items-center justify-content-center mb-4">
-        <Link to="/" className="btn btn-secondary">
+        <ContactButton to="/#contact" className="btn btn-secondary px-4">
           Nous Contacter
-        </Link>
+        </ContactButton>
       </div>
     </div>
   );

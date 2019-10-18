@@ -66,7 +66,6 @@ export default function MediaSection() {
                   58<small>M</small>
                 </h2>
                 <p>
-                  Opt-in <br />
                   Emailing
                 </p>
               </MediaCard>
@@ -86,8 +85,7 @@ export default function MediaSection() {
                   41<small>M</small>
                 </h2>
                 <p>
-                  V.U <br />
-                  Co-registration
+                  Coregistration
                 </p>
               </MediaCard>
               <MediaCard>
@@ -121,7 +119,7 @@ export default function MediaSection() {
                 <Fade>
                   <div className="col-12 col-md-6 d-flex align-items-center justify-content-end">
                     <button className="btn btn-light">
-                      DECOUVRIR NOS SOLUTIONS
+                      NOUS CONTACTER
                     </button>
                   </div>
                 </Fade>
