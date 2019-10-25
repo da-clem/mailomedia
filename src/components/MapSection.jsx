@@ -4,6 +4,10 @@ import { Marker as MarkerIcon } from "./icons";
 import ReactMapGL, { Marker } from "react-map-gl";
 import styled from "styled-components";
 
+const ModalBody = styled.div`
+  overflow: scroll;
+  max-height: 75vh;
+`
 
 const BulletPoints = styled.ul`
   list-style: none;
@@ -164,9 +168,27 @@ export default withRouter(function MapSection({ location }) {
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div className="modal-body">
-              ...
-            </div>
+            <ModalBody className="modal-body">
+              Le site www.agence-mailomedia.com est édité par :<br/><br/>
+              Agence Mailomedia SAS,<br/>
+              37/41 boulevard Dubouchage<br/>
+              06000 Nice<br/>
+              FRANCE<br/><br/>
+              Société SAS au capital de 2 000 €<br/>
+              Immatriculé au RCS de Nice 809 900 061<br/>
+              N° de TVA intracommunautaire FR60809900061<br/>
+              Le représentant légal et directeur de la publication est :<br/>
+              M. Laurent Mouret<br/><br/>
+              Le site www.agence-mailomedia.com est hébergé par :<br/>
+              OVH SAS<br/>
+              2 rue Kellermann<br/>
+              59100 Roubaix<br/><br/>
+              SAS au capital de 10 059 500.00 €<br/>
+              Immatriculée au RCS Lille Métropole n°424 761 419 00045<br/>
+              N° TVA : FR 22 424 761 419<br/><br/>
+              Ce site respecte le droit d’auteur. Tous les droits des auteurs des œuvres protégées reproduites et communiquées sur ce site, sont réservés. Sauf autorisation, toute utilisation des œuvres autres que la reproduction et la consultation individuelles et privées sont interdites.<br/>
+              L’agence Mailomedia consent à l’utilisateur le droit de consultation des dits sites pour son usage strictement personnel et privé. Toute reproduction, rediffusion ou commercialisation totale ou partielle du contenu est interdite.<br/>
+            </ModalBody>
           </div>
         </div>
       </Modal>

@@ -55,7 +55,7 @@ const BannerNavToggle = styled.div`
   width: 3rem;
   display: none;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1050px) {
     display: block;
   }
 
@@ -95,7 +95,7 @@ const BannerNavButton = styled(Link)`
 `
 
 const BannerNavMenu = styled.div`
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1050px) {
     position: absolute;
     right: 0;
     top: 100%;

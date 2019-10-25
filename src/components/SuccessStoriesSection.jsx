@@ -37,7 +37,7 @@ const SuccessStoriesWrapper = styled.div`
 
 const SuccessStoriesBackground = styled(SuccessStoriesBlob)`
   min-width: 100%;
-  height: 120vh;
+  height: 900px;
 `;
 
 const SuccessStoriesContent = styled.div`
