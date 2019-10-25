@@ -14,8 +14,8 @@ import MediaPartnersSection from "./MediaPartners"
 const MediaCard = styled.div`
   flex: 1 1 auto;
   display: flex;
-  height: 300px;
-  justify-content: space-evenly;
+  height: 200px;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 `
@@ -39,9 +39,17 @@ const StrategyContent = styled.div`
   display: flex;
   align-items: center;
 `
-
+const Img = styled.img`
+  height: 45px;
+`
 
 export default function MediaSection() {
+  function scrollToSection(id, e) {
+    e.preventDefault()
+    const target = document.getElementById(id)
+    target.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="">
       <div className="bg-light py-5">
@@ -53,46 +61,58 @@ export default function MediaSection() {
           <Fade cascade>
             <div className="d-flex justify-content-between text-center flex-wrap">
               <MediaCard>
-                <img src={PartenairesMedia} alt="PartenairesMedia" />
-                <h2 className="text-primary">1200</h2>
+                <div>
+                  <Img className="mb-2" src={PartenairesMedia} alt="PartenairesMedia" />
+                  <h2 className="text-primary">
+                    1200
+                  </h2>
+                </div>
                 <p>
                   Partenaires <br />
                   médias
                 </p>
               </MediaCard>
               <MediaCard>
-                <img src={OptIn} alt="OptIn" />
-                <h2 className="text-primary">
-                  58<small>M</small>
-                </h2>
+                <div>
+                  <Img className="mb-2" src={OptIn} alt="OptIn" />
+                  <h2 className="text-primary">
+                    58<small>M</small>
+                  </h2>
+                </div>
                 <p>
                   Emailing
                 </p>
               </MediaCard>
               <MediaCard>
-                <img src={Programmatique} alt="Programmatique" />
-                <h2 className="text-primary">
-                  117<small>M</small>
-                </h2>
+                <div>
+                  <Img className="mb-2" src={Programmatique} alt="Programmatique" />
+                  <h2 className="text-primary">
+                    117<small>M</small>
+                  </h2>
+                </div>
                 <p>
                   V.U <br />
                   Programmatique
                 </p>
               </MediaCard>
               <MediaCard>
-                <img src={CoRegistration} alt="CoRegistration" />
-                <h2 className="text-primary">
-                  41<small>M</small>
-                </h2>
+                <div>
+                  <Img className="mb-2" src={CoRegistration} alt="CoRegistration" />
+                  <h2 className="text-primary">
+                    41<small>M</small>
+                  </h2>
+                </div>
                 <p>
                   Coregistration
                 </p>
               </MediaCard>
               <MediaCard>
-                <img src={SEA} alt="SEA" />
-                <h2 className="text-primary">
-                  58<small>M</small>
-                </h2>
+                <div>
+                  <Img className="mb-2" src={SEA} alt="SEA" />
+                  <h2 className="text-primary">
+                    58<small>M</small>
+                  </h2>
+                </div>
                 <p>
                   V.U <br /> Native Ads
                 </p>
@@ -118,7 +138,7 @@ export default function MediaSection() {
                 </Fade>
                 <Fade>
                   <div className="col-12 col-md-6 d-flex align-items-center justify-content-end">
-                    <button className="btn btn-light">
+                    <button className="btn btn-light" onClick={(e) => scrollToSection("contact", e)}>
                       NOUS CONTACTER
                     </button>
                   </div>

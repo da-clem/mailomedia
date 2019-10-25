@@ -3,7 +3,7 @@ import { BGTUI } from '../icons'
 
 export default function TUI() {
   return (
-    <div className="pb-5">
+    <div className="pb-1">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
           <h1>TUI</h1>
@@ -59,7 +59,7 @@ export default function TUI() {
           <p className="display-2 text-primary mb-1">
             27,315<small>M</small>
           </p>
-          <p>Utilisateurs touchés par nos campaignes</p>
+          <p>Utilisateurs touchés par nos campagnes</p>
         </div>
       </div>
     </div>

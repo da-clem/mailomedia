@@ -3,6 +3,7 @@ import React from "react";
 export default function Marker() {
   return (
     <svg
+      style={{marginTop: '-50px'}}
       width="38"
       height="59"
       viewBox="0 0 38 59"

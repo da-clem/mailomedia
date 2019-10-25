@@ -3,7 +3,7 @@ import { BGDarty } from '../icons'
 
 export default function Darty() {
   return (
-    <div className="pb-5">
+    <div className="pb-1">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
           <h1>DARTY</h1>
@@ -56,7 +56,7 @@ export default function Darty() {
           <p className="display-2 text-primary mb-1">
             7,515<small>M</small>
           </p>
-          <p>Utilisateurs touchés par nos campaignes</p>
+          <p>Utilisateurs touchés par nos campagnes</p>
         </div>
       </div>
     </div>

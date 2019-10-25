@@ -35,8 +35,8 @@ const Modal = styled.div`
 `
 
 export default withRouter(function MapSection({ location }) {
-  const latitude = 43.699298;
-  const longitude = 7.266372;
+  const latitude = 43.701020;
+  const longitude = 7.269434;
 
   const [modalOpen, setModalOpen] = useState(false)
 
@@ -142,7 +142,7 @@ export default withRouter(function MapSection({ location }) {
         </section>
         <section onClick={() => setModalOpen(true)} className="bg-gradient-secondary text-white font-weight-bold text-center py-1">
           <p>
-            Mentions légales - Copyright 2019 Mailomedia - Design Huap Studio
+            Mentions légales - Copyright 2019 Mailomedia
           </p>
         </section>
       </footer>

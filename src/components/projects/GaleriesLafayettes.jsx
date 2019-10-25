@@ -3,7 +3,7 @@ import { BGGaleriesLafayettes } from '../icons'
 
 export default function GaleriesLafayettes() {
   return (
-    <div className="p5-8">
+    <div className="pb-1">
       <div className="row py-3 text-center text-lg-left">
         <div className="col-12 col-lg-6 ">
           <h1>Les Galeries Lafayette</h1>
@@ -58,7 +58,7 @@ export default function GaleriesLafayettes() {
           <p className="display-2 text-primary mb-1">
             7,833<small>M</small>
           </p>
-          <p>Utilisateurs touchés par nos campaignes</p>
+          <p>Utilisateurs touchés par nos campagnes</p>
         </div>
       </div>
     </div>

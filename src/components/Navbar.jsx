@@ -138,7 +138,7 @@ export default function Navbar() {
               Accueil
             </BannerNavLink>
             <BannerNavLink onClick={(e) => scrollToSection("solutions", e)}>
-              L’agence
+              Agence
             </BannerNavLink>
             <BannerNavLink onClick={(e) => scrollToSection("perfection", e)}>
               Solutions
