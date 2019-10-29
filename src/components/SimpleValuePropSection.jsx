@@ -32,7 +32,7 @@ export default function SimpleValuePropSection() {
   return (
     <SimpleValuePropWrapper className="container text-center">
       <Fade cascade>
-        <div className="row text-center">
+        <div className="row">
           <div className="col-12 col-md-6 col-lg-4">
             <SimpleValuePropCard className="text-primary">
               <SimpleValuePropCardIcon src={Emailing} alt="Emailing" />
