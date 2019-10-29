@@ -16,6 +16,9 @@
     "react-slick": "^0.25.2",
     "styled-components": "^4.3.2"
   },
+  "engines": {
+    "node": "12.13.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
