@@ -17,7 +17,7 @@ const BulletPoints = styled.ul`
 
 const BulletPoint = styled.li`
   font-size: 17px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   position: relative;
   padding-left: 2rem;
 
