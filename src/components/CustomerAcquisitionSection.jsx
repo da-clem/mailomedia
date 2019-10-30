@@ -19,7 +19,7 @@ export default function CustomerAcquisitionSection() {
       <section className="row">
         <Fade>
           <div className="col-12 col-lg-6 pb-2">
-            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5 bg-gradient-secondary text-white">
+            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-2 px-md-4 px-lg-5 bg-gradient-secondary text-white">
               <header>
                 <img src={Performance} alt="Performance" />
                 <h3 className="my-2">Performance</h3>
@@ -34,7 +34,7 @@ export default function CustomerAcquisitionSection() {
         </Fade>
         <Fade>
           <div className="col-12 col-lg-6 pb-2">
-            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5">
+            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-2 px-md-4 px-lg-5">
               <header>
                 <img src={Expertise} alt="Expertise" />
                 <h3 className="my-2">Expertise</h3>
@@ -49,7 +49,7 @@ export default function CustomerAcquisitionSection() {
         </Fade>
         <Fade>
           <div className="col-12 col-lg-6 pb-2">
-            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5">
+            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-2 px-md-4 px-lg-5">
               <header>
                 <img src={Social} alt="Social" />
                 <h3 className="my-2">Conseil</h3>
@@ -65,7 +65,7 @@ export default function CustomerAcquisitionSection() {
         </Fade>
         <Fade>
           <div className="col-12 col-lg-6 pb-2">
-            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-5 bg-gradient-primary text-white">
+            <article className="h-100 rounded shadow-lg pt-4 pb-6 px-2 px-md-4 px-lg-5 bg-gradient-primary text-white">
               <header>
                 <img src={Transparence} alt="Transparence" />
                 <h3 className="my-2">Transparence</h3>
