@@ -8,20 +8,26 @@ const BannerHeader = styled.header`
   align-items: center;
   flex: 0 0 auto;
   position: fixed;
-  top: 0;
+  top: ${({ hidden }) => hidden ? '-75px' : '0'};
   left: 0;
   width: 100%;
   background: linear-gradient(to right, rgba(70, 198, 235, 0.8), rgba(47, 172, 225, 0.8));
   z-index: 1000;
+  transition: top 0.2s ease;
 `;
 
-const BannerLogo = styled.div`
+const BannerLogo = styled(Link)`
   font-size: 24px;
   font-weight: lighter;
   color: white;
 
   span {
     font-weight: bold;
+  }
+
+  &:hover {
+    color: white;
+    text-decoration: none;
   }
 `;
 
@@ -124,9 +130,9 @@ export default function Navbar() {
   }
 
   return (
-    <BannerHeader className="py-1 py-lg-2">
+    <BannerHeader className="py-1">
       <div className="container d-flex justify-content-between">
-        <BannerLogo>
+        <BannerLogo to="/">
           <span>mailo</span>
           media.
         </BannerLogo>

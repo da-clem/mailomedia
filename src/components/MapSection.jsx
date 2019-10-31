@@ -59,7 +59,7 @@ export default withRouter(function MapSection({ location }) {
     <div className="bg-gradient-primary" id="contact">
       <section className="container pt-8 pb-10">
         <div className="row bg-white shadow">
-          <div className="col-12 col-md-6 px-0">
+          <div className="col-12 col-md-6 px-0" style={{ pointerEvents: 'none' }}>
             <ReactMapGL
               {...map.viewport}
               onViewportChange={viewport => setMap({ viewport })}
@@ -123,18 +123,18 @@ export default withRouter(function MapSection({ location }) {
         </div>
       </section>
       <footer className="border-top border-white">
-        <section className="text-white w-100 d-flex justify-content-between container py-3">
-          <div className="h4 font-weight-light">
+        <section className="text-white w-100 d-flex justify-content-between container flex-wrap py-3">
+          <div className="h4 font-weight-light pb-1">
             <span className="font-weight-bold">mailo</span>media.
           </div>
           <div className="d-flex">
-            <div className="px-2">
+            <div className="pr-4">
               <p className="font-weight-bold">Nice</p>
               <p>
                 <a href="https://goo.gl/maps/sXE7t7pWcvFJWkF87" className="text-white">37/41, boulevard Dubouchage<br /> 06000 Nice FRANCE</a>
               </p>
             </div>
-            <div className="px-2">
+            <div className="pr-4">
               <p className="font-weight-bold">Contact</p>
               <p>
                 <a href="tel:0493815715" className="text-white">04 93 81 57 15</a>

@@ -95,6 +95,14 @@ const ArrowButton = styled.button`
 `;
 
 export default function BannerSection() {
+
+
+  function scrollToSection(id, e) {
+    e.preventDefault()
+    const target = document.getElementById(id)
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   return (
     <BannerWrapper id="home">
       <BannerBackground />
@@ -105,7 +113,7 @@ export default function BannerSection() {
             <BannerParagraph>
               Créeons ensemble une stratégie d'acquisition performante <br />
               pour conquérir vos nouveaux clients.
-              <ArrowButton className="btn btn-secondary">
+              <ArrowButton className="btn btn-secondary" onClick={(e) => scrollToSection("simple-value-prop", e)}>
                 <Arrow />
               </ArrowButton>
             </BannerParagraph>
