@@ -4,7 +4,8 @@ import { Fade } from "react-reveal";
 import { Emailing, CoRegistration, Programmatique, Monetisation, SEA, Social } from "./icons";
 
 const SimpleValuePropWrapper = styled.div`
-  margin: 4rem 0 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 `;
 
 const SimpleValuePropCard = styled.div`
