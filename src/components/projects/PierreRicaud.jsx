@@ -50,7 +50,7 @@ export default function PierreRicaud() {
           <p className="display-2 text-primary mb-1">
             <small>+</small>32<small>k</small>
           </p>
-          <p>Moyenne du COS (cost of sales) sur nos campagnes</p>
+          <p>Nouvelles clientes en Europe</p>
         </div>
         <div className="col-12 col-lg-4 text-center mb-3">
           <p className="display-2 text-primary mb-1">
