@@ -105,7 +105,7 @@ export default withRouter(function MapSection({ location }) {
             <h3>Vous avez des questions concernant :</h3>
             <BulletPoints>
               <BulletPoint className="mt-3">
-                <strong className="w-100">Nos services?</strong>
+                <strong className="w-100">Nos services ?</strong>
                 <br />
                 <p>
                   <a href="mailto:hello@agence-mailomedia.com">hello@agence-mailomedia.com</a>

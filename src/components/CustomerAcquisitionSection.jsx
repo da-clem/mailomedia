@@ -41,7 +41,7 @@ export default function CustomerAcquisitionSection() {
               </header>
               <p>
                 Connaître parfaitement l’éco-système digital et ses ressources.
-                Nous assurons ka pleine maitrise de l’utilisation des principaux
+                Nous assurons la pleine maitrise de l’utilisation des principaux
                 leviers d’acquisition pour obtenir les meilleures performances.
               </p>
             </article>
@@ -58,7 +58,7 @@ export default function CustomerAcquisitionSection() {
                 Offrir le meilleur accompagnement à travers une équipe composée de
                 spécialistes toujours disponibles. Des chefs de projets
                 entièrement dédiés à la résolution de problématiques en apportant
-                les recommandations nécessaires
+                les recommandations nécessaires.
               </p>
             </article>
           </div>
@@ -72,8 +72,8 @@ export default function CustomerAcquisitionSection() {
               </header>
               <p>
                 La diffusion de toutes nos campagnes s’appuie sur un média plan
-                transparant aux sources vérifiées. Nos actions sont
-                systématiquement reportées et communiquées{" "}
+                transparent aux sources vérifiées. Nos actions sont
+                systématiquement reportées et communiquées.{" "}
               </p>
             </article>
           </div>

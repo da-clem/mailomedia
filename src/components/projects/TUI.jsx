@@ -37,7 +37,7 @@ export default function TUI() {
         <p>
           TUI avait pour ambition de <strong>générer davantage de réservations</strong>.<br /><br />
           Cet objectif a eu pour contrainte financière, la maîtrise du coût client par rapport au montant de
-          la vente (COS) dans un contexte concurrentiel très fort et une période commerciales saisonnières.
+          la vente (COS) dans un contexte concurrentiel très fort et des périodes commerciales saisonnières.
           Les canaux utilisés pour l’atteindre ont été l'<strong>e-mailing</strong>, les <strong>médias sociaux</strong> et le <strong>display</strong>. A l’issue de
           cette opération réussie, nous avons effectué une veille concurrentielle, ayant généré des
           recommandations utiles à notre client.<br /><br />

@@ -80,7 +80,7 @@ export default function MediaSection() {
                   </h2>
                 </div>
                 <p>
-                  Emailing
+                  E-mailing
                 </p>
               </MediaCard>
               <MediaCard>

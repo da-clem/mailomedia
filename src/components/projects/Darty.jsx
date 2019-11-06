@@ -36,7 +36,7 @@ export default function Darty() {
       <div className="d-flex justify-content-center text-center py-3 px-lg-10">
         <p>
           DARTY/FNAC a eu recours à notre savoir-faire en <strong>stratégie d’acquisition</strong>, afin de <strong>booster ses ventes</strong>
-          avec un objectif de performance de conversion très <strong>ROIste</strong>.<br /><br />
+           avec un objectif de performance de conversion très <strong>ROIste</strong>.<br /><br />
           Cet objectif a fait l’objet d’une double contrainte, à savoir être exécuté sur un temps limité et ce
           tout en gardant la maîtrise des coûts liés aux ventes.<br /><br />
           Notre réactivité et notre parfaite connaissance des sources et outils utilisés, au travers des canaux
