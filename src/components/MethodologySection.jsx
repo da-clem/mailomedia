@@ -165,7 +165,7 @@ export default function MethodologySection() {
               <strong>
                 les meilleurs résultats de croissance dans les meilleurs délais.
                 <br /><br className="d-none d-lg-block" />
-                Grâce à la qualité et la maîtrise de nos contenus vous gagnez en
+                Grâce à la qualité et la maîtrise de nos médias vous gagnez en
                 visibilité et touchez une audience affinitaire pour votre marque.
               </strong>
             </p>
@@ -192,11 +192,11 @@ export default function MethodologySection() {
               </MethodologyCardContent>
               <MethodologyBulletPoints>
                 <MethodologyBulletPoint>
-                  Expression et analyse du besoin, des objectifs et des KPIs.
+                  Expression et analyse du besoin, des objectifs et des KPIs
                 </MethodologyBulletPoint>
                 <MethodologyBulletPoint>
                   Proposition détaillée du plan d’action et des ressources
-                  employées.
+                  employées
                 </MethodologyBulletPoint>
               </MethodologyBulletPoints>
             </MethodologyCard>

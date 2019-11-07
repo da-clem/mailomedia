@@ -41,8 +41,7 @@ export default function GaleriesLafayettes() {
           de conquêtes de nouveaux clients mixant deux objectifs : COS (coût par vente) et CAC (coût
           d’acquisition par nouveau client).<br /><br />
           Compte tenu de la contrainte de temps à laquelle nous avons dû faire face, nous avons opté
-          pour des campagnes e-mailing et display destinées à mettre en avant les produits d’appel. Notre
-          <strong>engagement de performance</strong> a été respecté grâce à notre parfaite maîtrise du <strong>coût par vente</strong>.
+          pour des campagnes e-mailing et display destinées à mettre en avant les produits d’appel. Notre <strong>engagement de performance</strong> a été respecté grâce à notre parfaite maîtrise du <strong>coût par vente</strong>.
         </p>
       </div>
       <div className="row">
@@ -52,7 +51,7 @@ export default function GaleriesLafayettes() {
         </div>
         <div className="col-12 col-lg-4 text-center mb-3">
           <p className="display-2 text-primary mb-1">4 jours</p>
-          <p>Délais moyens de mise en place d’une <br /> opération d’acquisition</p>
+          <p>Délais moyens de mise en place d’une <br /> opération d’acquisition multi leviers</p>
         </div>
         <div className="col-12 col-lg-4 text-center mb-3">
           <p className="display-2 text-primary mb-1">
