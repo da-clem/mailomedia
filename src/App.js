@@ -19,7 +19,7 @@ function App({ location }) {
         <Helmet>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width"></meta>
-          <title>Mailo Media | Agence Webmarketing</title>
+          <title>mailomedia | Agence digitale performante</title>
         </Helmet>
         <Switch location={location}>
           <Route path="/portfolio" component={lazy(() => import('./PortfolioPage'))} />
